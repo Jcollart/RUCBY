@@ -1,0 +1,308 @@
+html{
+    height: 100%;
+}
+
+body{
+    position: relative;
+    background-color: white;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: "Arvo";
+    text-align: center;
+}
+
+h2  {
+    font-size: 2em;
+}
+
+
+
+/***********/
+/* *SLIDER **/
+/***********/
+
+#slider {
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+
+#slider figure img {
+    width: 20%;
+    float: left;
+}
+
+
+
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+
+    20% {
+        left: 0;
+    }
+
+    25% {
+        left: -100%;
+    }
+
+    45% {
+        left: -100%;
+    }
+
+    50% {
+        left: -200%;
+    }
+
+    70% {
+        left: -200%;
+    }
+
+    75% {
+        left: -300%;
+    }
+
+    85% {
+        left: -300%;
+    }
+
+    95% {
+        left: -400%;
+    }
+}
+
+/*************/
+/* PRESIDENT */
+/*************/
+
+.presentation {
+    width: 100%;
+    min-height: 70vh;
+    margin-top: 100px;
+    animation-duration: 2s;
+    animation-name: coucou;
+}
+
+@keyframes coucou {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+}
+
+.pImg {
+    width: 35%;
+    float: left;
+    height: auto;
+    background: white;
+
+}
+
+
+.pImg img {
+    width: 80%;
+    max-width: 400px;
+    margin-left: 20px;
+}
+
+.pTexte {
+    width: 55%;
+    float: right;
+    height: auto;
+    font-size: 1.7em;
+    margin-right: 60px;
+    margin-top: 30px;
+}
+
+@media all and (max-width:1099px) {
+    .presentation {
+        margin-top: 50px;
+    }
+
+    .pTexte {
+        font-size: 1.4em;
+        margin-right: 40px;
+    }
+
+    #slider {
+        margin-top: 6%;
+    }
+}
+
+@media (max-width:991px) {
+    .presentation {
+        margin-top: 50px;
+    }
+
+    .pTexte {
+        font-size: 1.2em;
+        margin-right: 40px;
+    }
+}
+
+@media (max-width:767px) {
+    .presentation {
+        margin-top: 20px;
+    }
+
+    .pImg img {
+        margin-top: 50px;
+        margin-left: 20px;
+    }
+
+    .pTexte {
+        font-size: 1em;
+        margin-right: 20px;
+    }
+
+    #slider {
+        margin-top: 7%;
+    }
+}
+
+@media (max-width:480px) {
+
+    h2 {
+        font-size: 1.5em;
+    }
+    .presentation {
+        margin-top: 20px;
+    }
+
+    .pImg img {
+        margin-top: 70px;
+        margin-left: 20px;
+    }
+
+    .pTexte {
+        font-size: 0.8em;
+        margin-right: 20px;
+    }
+
+    #slider {
+        margin-top: 8%;
+    }
+}
+
+/*************/
+/** PARRALAX**/
+/*************/
+
+.parallax-window {
+    min-height: 50vh;
+    background: transparent;
+}
+
+/*************/
+/** A PROPOS**/
+/*************/
+
+.aPropos {
+    width: 100%;
+    min-height: 70vh;
+    margin-top: 100px;
+}
+
+.aPimg{
+    width: 35%;
+    float: right;
+    height: auto;
+    background: white;
+}
+
+.aPimg img {
+    width: 80%;
+    max-width: 400px;
+    margin-right: 20px;
+}
+
+.aPtexte {
+    width: 55%;
+    float: left;
+    height: auto;
+    font-size: 1.8em;
+    margin-left : 50px;
+    margin-top: 20px;
+}
+
+@media all and (max-width:1199px) {
+    .aPropos {
+        min-height: 60vh;
+    }
+
+    .aPropos {
+        margin-top: 50px;
+    }
+
+    .aPimg img {
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+
+
+    .aPtexte {
+        font-size: 1.5em;
+        margin-left : 50px;
+    }
+}
+
+@media (max-width:991px) {
+
+    .aPropos {
+        margin-top: 20px;
+    }
+
+    .aPimg img {
+        margin-right: 20px;
+        margin-top: 40px;
+    }
+
+
+    .aPtexte {
+        font-size: 1.2em;
+        margin-left : 50px;
+    }
+}
+
+@media (max-width:767px) {
+    .aPropos {
+        margin-top: 70px;
+    }
+
+
+    .aPtexte {
+        font-size: 1em;
+        margin-left : 50px;
+    }
+}
+
+@media (max-width:480px) {
+    .aPropos {
+        margin-top: 70px;
+    }
+
+
+    .aPtexte {
+        font-size: 0.8em;
+        margin-left : 20px;
+    }
+    .aPimg img {
+        margin-right: 20px;
+        margin-top: 70px;
+    }
+}
