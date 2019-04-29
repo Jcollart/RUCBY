@@ -5,12 +5,22 @@
 
 <header>
   <nav>
-      <ul>
-          <li class="menu"><a href="index.php">ACCUEIL</a></li>
-          <li class="menu"><a href="rank.php">CLASSEMENTS</a></li>
-          <li><a href="#"><img id="logo" src="images/logo-header.png" alt="logo"/></a></li>
-          <li class="menu"><a href="galerie.php">GALERIE</a></li>
-          <li class="menu"><a href="contact.php">CONTACT</a></li>
-      </ul>
-  </nav>
+    <div class="nav-logo">
+      <a href="index.php"><img id="logo" src="images/logo-header.png"/></a>
+    </div>
+    <div class="nav-btn">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+    <input type="checkbox" id="nav-check">
+    <div class="nav-links">
+      <a href="rank.php">classements</a>
+      <a href="#news">news</a>
+      <a href="galerie.php">galerie</a>
+      <a href="contact.php">contact</a>
+    </div>
+</nav>
 </header>
