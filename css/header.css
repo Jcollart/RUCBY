@@ -3,128 +3,110 @@ html, body {
   margin: 0;
 }
 
-header {
-  display: flex;
-  z-index: 10;
-}
-
-header ul {
-  text-align: center;
-  word-spacing: 100px;
-}
-
-header > nav {
-  height: 60px;
+nav {
+  height: 70px;
   width: 100%;
-  font-family: 'Arvo';
-  background-color: #303030;
-  opacity: 0.8;
+  background-color: #6D2878;
+  position: relative;
   text-transform: uppercase;
   position: fixed;
+  z-index: 1030;
+  opacity: 0.8;
 }
 
-#logo {
-    width: 3.5em;
-    padding-top: 2px;
+nav > .nav-logo > a > img {
+  margin-right: 200px;
+  height: 80px;
+  margin-top: 20px;
 }
 
-.menu {
-    font-size: 1.5em;
+nav > .nav-logo {
+  display: inline;
 }
 
-header > nav > ul > li{
-    display: inline-block;
-    vertical-align: middle;
+nav > .nav-btn {
+  display: none;
 }
 
-nav > ul > li > a {
-  padding-top: 12px;
-  font-size: 16px;
+nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 17px;
+  margin-top: 12px;
+  word-spacing: 50px;
+}
+
+nav > .nav-links > a:last-child {
+  padding-right: 220px;
+}
+
+nav > .nav-links > a {
+  display: inline-block;
+  padding-top: 15px;
+  letter-spacing: .5px;
   text-decoration: none;
-  color: #C5C5C5;
-}
-
-nav > ul > li > a:hover {
   color: white;
 }
 
-@media all and (max-width:1199px) {
-
-  header > nav {
-    height: 60px;
-  }
-
-  #logo {
-      width: 3.5em;
-      padding-top: 2px;
-  }
-
-  .menu {
-      font-size: 1.5em;
-  }
-
-  header ul {
-    text-align: center;
-    word-spacing: 80px;
-  }
-
-  nav > ul > li > a {
-    padding-top: 12px;
-    font-size: 14px;
-  }
-
+nav > .nav-links > a:hover {
+  color: white;
 }
 
-@media all and (max-width:780px) {
+nav > #nav-check {
+  display: none;
+}
 
-  header > nav {
+@media all and (max-width:1200px) {
+  nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
     height: 50px;
+    padding: 13px;
   }
 
-  #logo {
-      width: 3em;
-      padding-top: 2px;
+  nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #222222;
+    height: 100px;
+    transition: all 0.3s ease-in;
+    overflow-x: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  nav > .nav-links > a {
+    display: block;
+    width: 100%;
+    padding-left: 15px;
   }
 
-  .menu {
-      font-size: 1.3em;
+  nav > .nav-links > a:hover {
+    color: blue;
   }
 
-  header ul {
-    text-align: center;
-    word-spacing: 50px;
+  nav > #nav-check:not(:checked) + .nav-links {
+    height: 0px;
+  }
+  nav > #nav-check:checked + .nav-links {
+    height: calc(35vh - 25px);
+    overflow-y: auto;
   }
 
-  nav > ul > li > a {
-    padding-top: 12px;
-    font-size: 12px;
+  nav > .nav-logo > a {
+    padding-top: 16px;
+    margin-left: 15px;
   }
-
-}
-
-@media all and (max-width:550px) {
-
-  header > nav {
-    height: 35px;
-  }
-
-  #logo {
-      width: 2.5em;
-      padding-top: 2px;
-  }
-
-  .menu {
-      font-size: 1em;
-  }
-
-  header ul {
-    text-align: center;
-    word-spacing: 30px;
-  }
-
-  nav > ul > li > a {
-    padding-top: 10px;
-    font-size: 10px;
-  }
-
 }

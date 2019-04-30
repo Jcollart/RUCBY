@@ -13,9 +13,7 @@
 <body>
     <?php include('header2.php'); ?>
 
-    <!--------------------------------------------------------------------------------
-    ------------------------------- HEADER CONTACT -----------------------------------
-    --------------------------------------------------------------------------------->
+    <!--HEADER CONTACT-->
 
     <div id="header_contact">
         <div id="cadre_titre">
@@ -26,18 +24,16 @@
 
 
 
-    <!-------------------------------------------------------------------------------
-    -----------------------------FORMULAIRE CONTACT----------------------------------
-    -------------------------------------------------------------------------------->
+    <!--FORMULAIRE CONTACT-->
 
 
 
 
 
     <form method="post" action="traitement_formulaire.php">
-        <!--- CONTENEUR FORMULAIRE --->
+        <!--CONTENEUR FORMULAIRE-->
         <div  id="conteneur-form">
-            <!------FORMULAIRE PARTIE GAUCHE -------->
+            <!--FORMULAIRE PARTIE GAUCHE-->
             <div  id="element-form1">
 
                 <legend>Vos coordonnées</legend>
@@ -50,35 +46,35 @@
                 <input type="text" name="sujet" id="sujet" placeholder="Sujet" size="40" maxlength="20" />
 
             </div>
-            <!------FIN FORMULAIRE PARTIE GAUCHE------>
+            <!--FIN FORMULAIRE PARTIE GAUCHE-->
 
 
-            <!-------FORMULAIRE PARTIE DROITE--------->
+            <!--FORMULAIRE PARTIE DROITE-->
             <div  id="element-form2">
 
                 <legend>Votre message</legend>
                 <textarea name="message" id="message" rows="14" cols="40" placeholder="Texte"></textarea>
 
             </div>
-            <!---FIN FORMULAIRE PARTIE DROITE--->
+            <!--FIN FORMULAIRE PARTIE DROITE-->
 
 
         </div>
-        <!---FIN CONTENEUR FORMULAIRE --->
+        <!--FIN CONTENEUR FORMULAIRE-->
 
-        <!-------BOUTON ENVOYER---------->
+        <!--BOUTON ENVOYER-->
         <div  id=bouton-form>
             <input type="submit" value="Envoyer" />
         </div>
 
     </form>
 
-    <!-- PARRALAX -->
+    <!--PARRALAX-->
     <div class="parallax-window" data-parallax="scroll" data-image-src="images/sport1.jpg" alt=""></div>
-    <!-- FIN PARRALAX -->
+    <!--FIN PARRALAX-->
 
 
-    <!------ MAP ------>
+    <!--MAP-->
 
     <div id=map><iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2576.956194069737!2d4.720275316032564!3d49.76808097938698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47ea0e062e03d7e9%3A0xc5cc5f6ee91f2b25!2sCCI+des+Ardennes!5e0!3m2!1sfr!2sfr!4v1555930070253!5m2!1sfr!2sfr"
@@ -86,7 +82,7 @@
     </div>
 
 
-    <!----- JOIN US ----->
+    <!--JOIN US-->
 
     <div id="join_us">
         <h2>Rejoignez-nous !</h2><br>

@@ -14,7 +14,7 @@
 
 <body>
 <?php include('header.php');?>
-	<!-- SLIDER -->
+	<!--SLIDER-->
 	<div id="slider">
 		<figure>
 			<img src="images/balle.jpg" alt=''>
@@ -24,9 +24,9 @@
 			<img src="images/sport4.jpg" alt=''>
 		</figure>
 	</div>
-	<!-- FIN SLIDER -->
+	<!--FIN SLIDER-->
 
-	<!-- MOT DU PRESIDENT -->
+	<!--MOT DU PRESIDENT-->
 	<div class="presentation">
 		<div class="pImg">
 			<img src="images/president.jpeg" alt="Président">
@@ -45,13 +45,13 @@
 				laborum.</p>
 		</div>
 	</div>
-	<!-- FIN MOT DU PRESIDENT -->
+	<!--FIN MOT DU PRESIDENT-->
 
-	<!-- PARRALAX -->
+	<!--PARRALAX-->
 	<div class="parallax-window" data-parallax="scroll" data-image-src="images/piscine.jpg" alt=""></div>
-	<!-- FIN PARRALAX -->
+	<!--FIN PARRALAX-->
 
-	<!-- A PROPOS -->
+	<!--A PROPOS-->
 	<div class="aPropos">
 		<div class="aPimg">
 			<img src="images/apropos.jpg" alt="">
@@ -67,7 +67,7 @@
 				architecto sit impedit optio.</p>
 		</div>
 	</div>
-	<!-- FIN A PROPOS -->
+	<!--FIN A PROPOS-->
 <?php include('footer1.php'); ?>
 <?php include('footer2.php');?>
 
