@@ -25,29 +25,24 @@
             <h1>RUBRIQUE PHOTOS</h1>
         </div>
     </div>
+
     <div id="choix_rubphoto">
-    <div id="col1evenement"><a href="galerie.php"><img class="" scr="images/4.jpg">
+
+        <div id="col1evenement"><a href="galerie.php"><img  src="images/f3.jpg">
                     <p>IMAGES EVENEMENTS</p>
-                    </a>
-                    </div>
-    <div id="col2match"><a href="galerie.php"><img class="" src="images/f2.jpg">
+            </a>
+        </div>
+        <div id="col2match"><a href="galerie.php"><img  src="images/f3.jpg" >
                     <p>IMAGES MATCHS</p>
-                    </a>
-                    </div>
-    <div id="col3soiree"><a href="galerie.php"><img class="" src="images/f3.jpg">
+            </a>
+        </div>
+        <div id="col3soiree"><a href="galerie.php"><img  src="images/f3.jpg">
                     <p>IMAGES SOIREES</p>
-                    </a>
-                    </div>
+            </a>
+        </div>
 
 
     </div>
-
-
-
-
-
-    <?php include('footer1.php'); ?>
-      <?php include('footer2.php');?>
 
 
 
