@@ -18,7 +18,6 @@
           </div>
         </div>
 
-      <br><br><br><br><br><br><br><br><br><br>
       <div class="tableau">
         <center><table>
           <tr>
@@ -112,9 +111,9 @@
         </table></center>
       </div>
 
-    <br><br><br><br><br><br><br>
+
     <p id="prochaines">Prochaines Journées</p>
-    <br><br><br><br><br><br><br>
+
 
       <div class="tabl_next_day">
         <center><table>
@@ -144,7 +143,7 @@
           </tr>
         </table></center>
       </div>
-      <br><br><br><br><br>
+  
       <?php include('footer1.php'); ?>
       <?php include('footer2.php');?>
     </body>
