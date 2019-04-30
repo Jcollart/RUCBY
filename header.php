@@ -19,6 +19,7 @@
     <div class="nav-links">
       <a href="rank.php">classements</a>
       <a href="#news">news</a>
+      <a href="Rubphoto.php">rubrique-photo</a>
       <a href="galerie.php">galerie</a>
       <a href="contact.php">contact</a>
     </div>
