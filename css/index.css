@@ -25,7 +25,7 @@ h2  {
 
 #slider {
     overflow: hidden;
-    min-height: 100vh;
+    min-height: 100%;
 }
 
 #slider figure {
@@ -85,12 +85,12 @@ h2  {
 /* PRESIDENT */
 /*************/
 
+
 .presentation {
     width: 100%;
-    min-height: 70vh;
-    margin-top: 100px;
     animation-duration: 2s;
     animation-name: coucou;
+    margin:1%;
 }
 
 @keyframes coucou {
@@ -131,7 +131,7 @@ h2  {
 
 @media all and (max-width:1099px) {
     .presentation {
-        margin-top: 50px;
+        margin-top: 1%;
     }
 
     .pTexte {
@@ -146,7 +146,7 @@ h2  {
 
 @media (max-width:991px) {
     .presentation {
-        margin-top: 50px;
+        margin-top: px;
     }
 
     .pTexte {
@@ -185,8 +185,8 @@ h2  {
     }
 
     .pImg img {
-        margin-top: 70px;
-        margin-left: 20px;
+        margin-top: 0px;
+        margin-left: 0px;
     }
 
     .pTexte {
@@ -195,7 +195,7 @@ h2  {
     }
 
     #slider {
-        margin-top: 8%;
+        margin-top: %;
     }
 }
 
@@ -204,7 +204,7 @@ h2  {
 /*************/
 
 .parallax-window {
-    min-height: 50vh;
+    min-height: 40%;
     background: transparent;
 }
 
@@ -214,8 +214,7 @@ h2  {
 
 .aPropos {
     width: 100%;
-    min-height: 70vh;
-    margin-top: 100px;
+    margin: 1%;
 }
 
 .aPimg{
@@ -237,17 +236,11 @@ h2  {
     height: auto;
     font-size: 1.8em;
     margin-left : 50px;
-    margin-top: 20px;
+    margin-top: 5%;
 }
 
 @media all and (max-width:1199px) {
-    .aPropos {
-        min-height: 60vh;
-    }
 
-    .aPropos {
-        margin-top: 50px;
-    }
 
     .aPimg img {
         margin-right: 20px;
@@ -263,9 +256,6 @@ h2  {
 
 @media (max-width:991px) {
 
-    .aPropos {
-        margin-top: 20px;
-    }
 
     .aPimg img {
         margin-right: 20px;
@@ -280,26 +270,23 @@ h2  {
 }
 
 @media (max-width:767px) {
-    .aPropos {
-        margin-top: 70px;
-    }
+
 
 
     .aPtexte {
         font-size: 1em;
         margin-left : 50px;
+        margin-top: 3%;
     }
 }
 
 @media (max-width:480px) {
-    .aPropos {
-        margin-top: 70px;
-    }
 
 
     .aPtexte {
         font-size: 0.8em;
-        margin-left : 20px;
+        margin-left : 5px;
+        margin-top: 0%;
     }
     .aPimg img {
         margin-right: 20px;

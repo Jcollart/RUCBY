@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="css/index.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+
   <title>Accueil</title>
 
 </head>
@@ -31,9 +32,8 @@
 		<div class="pImg">
 			<img src="images/president.jpeg" alt="Président">
 		</div>
-		<h2>Un mot du président</h2>
-		<br>
 		<div class="pTexte">
+			<h2>Un mot du président</h2><br>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
 				magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
@@ -56,8 +56,8 @@
 		<div class="aPimg">
 			<img src="images/apropos.jpg" alt="">
 		</div>
-		<h2>A Propos</h2>
 		<div class="aPtexte">
+			<h2>A Propos</h2><br>
 			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis illum error, molestias soluta numquam possimus,
 				saepe quia voluptas explicabo repudiandae, blanditiis corrupti distinctio repellendus nemo doloremque assumenda
 				earum perspiciatis eius. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore consequatur ipsa
