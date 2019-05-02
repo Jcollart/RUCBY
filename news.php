@@ -29,6 +29,19 @@
         </p>
     </div>
 
+    <article>
+        <div id=card>
+            <img src="images/futsal.jpg.jpg">
+        </div>
+
+
+    </article>
+
+
+    <!--- CARD NEWS --->
+
+
+
 
 
     <?php include('footer1.php'); ?>

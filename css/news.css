@@ -45,3 +45,17 @@ body{
     margin-bottom: auto;
 }
 
+#conteneur_texte{
+    margin: 2em;
+    height: 25em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#conteneur_texte p{
+font-size: 2em;
+width: 60%;
+text-justify: left;
+}
+
