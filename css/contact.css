@@ -46,7 +46,7 @@ body {
 
 /******* STYLE DU FORMULAIRE *******/
 form {
-    background-color:#7e9d01;
+    background-color:#6D2878;
     padding: 10px;
     display: block;
 
@@ -93,6 +93,7 @@ form {
 legend {
     margin-bottom: 10px;
     font-size: 2em;
+    color:white;
 }
 
 #conteneur-form input {
