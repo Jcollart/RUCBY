@@ -16,7 +16,7 @@
 
 <body>
 
-	<?php include('header2.php'); ?>
+	<?php include('header.php'); ?>
 	<h2>Galerie photo</h2>
 	<div class="ligne1">
 			<div class="photol1">

@@ -52,7 +52,6 @@ body {
     padding-left:5px;
     padding-right:5px;
     text-align: center;
-
 }
 
 #col2match {
@@ -63,7 +62,7 @@ body {
     margin-right:0px;
     padding-left:5px;
     padding-right:5px
-    
+
 }
 
 #col3soiree {
@@ -88,5 +87,5 @@ p {
     width: 100%;
     background-color: white;
     text-align: left;
-
+    margin-bottom: 250px;
 }
