@@ -5,7 +5,7 @@ $(document).ready(function(){
         $("nav").css("opacity" , "1");
       }
 
-      else if (scroll < 100) {
+      else if (scroll < 1) {
         $("nav").css("opacity" , "1");
       }
 

@@ -15,7 +15,8 @@ nav {
 }
 
 nav > .nav-logo > a > img {
-  margin-right: 200px;
+  margin-left: 10px;
+background-color: red;
   height: 65px;
   margin-top: 2px;
 }
@@ -37,7 +38,7 @@ nav > .nav-links {
 }
 
 nav > .nav-links > a:last-child {
-  padding-right: 220px;
+  padding-right: 50px;
 }
 
 nav > .nav-links > a {
@@ -49,7 +50,7 @@ nav > .nav-links > a {
 }
 
 nav > .nav-links > a:hover {
-  color: white;
+  color: grey;
 }
 
 nav > #nav-check {
@@ -108,5 +109,11 @@ nav > #nav-check {
   nav > .nav-logo > a {
     padding-top: 16px;
     margin-left: 15px;
+  }
+}
+
+@media all and (max-width:1950px) {
+  nav > .nav-logo > a > img {
+    margin-right: 700px;
   }
 }
