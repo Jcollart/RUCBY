@@ -51,32 +51,46 @@ li {
 
 .ligne1, .ligne2, .ligne3 {
     min-height: 35vh;
-    margin-top: 50px;
+    margin-top: px;
 }
 
 .photol1 img, .photol2 img, .photol3 img {
     display: inline-flex;
-    margin-right: 50px;
-    margin-top: 20px;
-    height: 250px;
-    width: 250px;
+    margin-right: 0px;
+    margin-top: 0px;
+    height: 350px;
+    width: 350px;
 
 }
 
 .ligne1 img, .ligne2 img, .ligne3 img {
-    margin-right : 5em;
+    margin-right : em;
 }
 
 ul#photol1, ul#photol2, ul#photol3 {
     max-width: 100%;
     height: auto;
-    display: inline-flex;
+    display: flex;
+    justify-content: space-around;
+    margin: 3% 0;
 }
 
-@media (max-width:991px) {
+.galerie img{
+  border: 5px solid #6D2878;
+  border-radius: 15%;
+}
+
+@media (max-width:1552px) {
+  .photol1 img, .photol2 img, .photol3 img {
+      height: 250px;
+      width: 250px;
+  }
+}
+
+@media (max-width:1111px) {
     .ligne1, .ligne2, .ligne3 {
         min-height: 40vh;
-        margin-top: 50px;
+        margin-top: 10px;
     }
 
     .photol1 img, .photol2 img, .photol3 img {
@@ -89,47 +103,21 @@ ul#photol1, ul#photol2, ul#photol3 {
     }
 
     .ligne1 img, .ligne2 img, .ligne3 img {
-        margin-right : 2em;
-    }
-}
-
-@media (max-width:767px) {
-    .ligne1, .ligne2, .ligne3 {
-        min-height: 40vh;
-        margin-top: 20px;
-    }
-
-    .photol1 img, .photol2 img, .photol3 img {
-        margin-left: 5px;
-        margin-right: 5px;
-        margin-top: 10px;
-        height: 150px;
-        width: 150px;
-
-    }
-
-    .ligne1 img, .ligne2 img, .ligne3 img {
         margin-right : 1em;
     }
+
+    ul#photol1, ul#photol2, ul#photol3 {
+        max-width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 2% 0;
+    }
 }
 
-@media (max-width:480px) {
-
-    .ligne1, .ligne2, .ligne3 {
-        min-height: 35vh;
-        margin-top: 20px;
-    }
-
-    .photol1 img, .photol2 img, .photol3 img {
-        margin-left: 2px;
-        margin-right: 2px;
-        margin-top: 2px;
-        height: 100px;
-        width: 100px;
-
-    }
-
-    .ligne1 img, .ligne2 img, .ligne3 img {
-        margin-right : 0.8em;
-    }
+@media (max-width:562px) {
+#cadre_titre{
+    height: 15em;
+  }
 }
