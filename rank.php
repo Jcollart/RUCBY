@@ -10,7 +10,7 @@
     </head>
 
     <body>
-      <?php include('header.php');?>
+      <?php include('header2.php');?>
 
         <div id="bloc_classements">
           <div id="cadre_titre">

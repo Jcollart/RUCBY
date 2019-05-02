@@ -11,12 +11,6 @@ body{
   text-align: center;
 }
 
-.img_rank{
-  width: 100%;
-  position: relative;
-}
-
-
 #bloc_classements{
     border-bottom: 6px solid #6D2878;
     display: flex;

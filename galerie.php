@@ -7,7 +7,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/galerie.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
 	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
 	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
 	<script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
@@ -16,8 +15,14 @@
 
 <body>
 
-	<?php include('header.php'); ?>
-	<h2>Galerie photo</h2>
+	<?php include('header2.php'); ?>
+
+	<div id="bloc_galerie">
+		<div id="cadre_titre">
+			<h1>GALERIE PHOTO</h1>
+		</div>
+	</div>
+
 	<div class="ligne1">
 			<div class="photol1">
 				<ul id="photol1">
@@ -75,11 +80,11 @@
 		<?php include('footer1.php'); ?>
 <?php include('footer2.php'); ?>
 
-<script type="text/javascript" charset="utf-8">
-  $(document).ready(function(){
-    $("a[rel^='prettyPhoto']").prettyPhoto();
-  });
-</script>
-</body>
+			<script type="text/javascript" charset="utf-8">
+			  $(document).ready(function(){
+			    $("a[rel^='prettyPhoto']").prettyPhoto();
+			  });
+			</script>
+		</body>
 
 </html>
