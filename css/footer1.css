@@ -112,7 +112,7 @@
   @media (min-width: 1750px) {
 
       .flex-rw {
-        min-height: 30vh;
+        
       }
 
       .footer-list-anchor {
@@ -127,14 +127,14 @@
   @media (max-width:991px) {
 
     .flex-rw {
-      min-height: 32vh;
+     
     }
   }
 
   @media (max-width: 480px) {
 
     .flex-rw {
-      min-height: 35vh;
+     
     }
 
     .footer-list-anchor {
