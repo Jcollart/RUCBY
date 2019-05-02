@@ -8,7 +8,7 @@
     <title>Les News</title>
 </head>
 <body>
-<?php include('header2.php'); ?>
+<?php include('header.php'); ?>
 
     <!--HEADER NEWS-->
 
@@ -17,7 +17,13 @@
             <h1>LES NEWS</h1>
         </div>
     </div>
+<!---FIN <div id="header_contact"> --->
 
+
+
+    
+    <?php include('footer1.php'); ?>
+    <?php include('footer2.php'); ?>
     
 </body>
 </html>
