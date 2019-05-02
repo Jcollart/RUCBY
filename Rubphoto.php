@@ -16,36 +16,35 @@
 <?php include('header.php');?>
 
 
+
     <!--------------------------------------------------------------------------------
     -                        HEADER RUBRIQUE PHOTOS                                 -
     --------------------------------------------------------------------------------->
 
     <div id="bloc_rubphotos">
         <div id="cadre_titre">
-            <h1>RUBRIQUE PHOTOS</h1>
+            <h1>RUBRIQUE PHOTOS </h1>
         </div>
     </div>
 
     <div id="choix_rubphoto">
 
-        <div id="col1evenement"><a href="galerie.php"><img  src="images/f3.jpg">
+        <div id="col1evenement"><a href="galerie.php"><img  src="images/nfutsal.jpg" width="500px" height="400px">
                     <p>IMAGES EVENEMENTS</p>
             </a>
         </div>
-        <div id="col2match"><a href="galerie.php"><img  src="images/f3.jpg" >
+        <div id="col2match"><a href="galerie.php"><img  src="images/futsal.jpg" width="500px" height="400px" >
                     <p>IMAGES MATCHS</p>
             </a>
         </div>
-        <div id="col3soiree"><a href="galerie.php"><img  src="images/f3.jpg">
+        <div id="col3soiree"><a href="galerie.php"><img  src="images/soireefutsal.jpg" width="500px" height="400px">
                     <p>IMAGES SOIREES</p>
             </a>
         </div>
 
 
     </div>
-    <?php include('footer1.php'); ?>
+   
     <?php include('footer2.php');?>
-
-
 </body>
 </html>
