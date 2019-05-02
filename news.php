@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,9 @@
     <link rel="stylesheet" href="css/news.css">
     <title>Les News</title>
 </head>
+
 <body>
-<?php include('header.php'); ?>
+    <?php include('header.php'); ?>
 
     <!--HEADER NEWS-->
 
@@ -17,13 +19,21 @@
             <h1>LES NEWS</h1>
         </div>
     </div>
-<!---FIN <div id="header_contact"> --->
+
+
+    <!---TEXTE PRESENTATION DE LA RUBRIQUE NEWS --->
+
+    <div id=conteneur_texte>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ipsa, quas expedita sint, impedit ex earum
+            consequatur repudiandae nesciunt labore dolore quo suscipit reiciendis, rem debitis sed atque! Quas, et!
+        </p>
+    </div>
 
 
 
-    
     <?php include('footer1.php'); ?>
     <?php include('footer2.php'); ?>
-    
+
 </body>
+
 </html>
