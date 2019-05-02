@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <?php include('header2.php'); ?>
+    <?php include('header.php'); ?>
 
     <!--HEADER CONTACT-->
 

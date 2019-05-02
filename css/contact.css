@@ -65,9 +65,9 @@ form {
 @keyframes slidein {
     from {
       margin-left: 100%;
-      width: 300%; 
+      width: 300%;
     }
-  
+
     to {
       margin-left: 0%;
       width: 100%;
@@ -79,14 +79,14 @@ form {
 #element-form1 {
     margin-left: 5px;
     margin-right: 5px;
-    
+
     }
 
 
 #element-form2 {
     margin-left: 5px;
     margin-right: 5px;
-    
+
 }
 
 
@@ -111,15 +111,15 @@ legend {
 #bouton-form{
   animation-duration: 4s;
     animation-name: slidein;
-       
+
 }
 
 @keyframes slidein {
     from {
       margin-right: 100%;
-      width: 300%; 
+      width: 300%;
     }
-  
+
     to {
       margin-right: 0%;
       width: 100%;
@@ -164,6 +164,7 @@ iframe {
     width: 100%;
     min-height: 50vh;
     font-size: 1.7em;
+    margin-bottom: 100px;
 }
 
 
@@ -175,12 +176,13 @@ iframe {
 @media (max-width:1099px) {
     #join_us {
         font-size: 1.5em;
+        margin-bottom: 10px;
     }
 }
 
 
 @media (max-width:991px) {
-    
+
     #header_contact {
         min-height: 35em;
     }
@@ -188,14 +190,14 @@ iframe {
     #header_contact h1 {
         font-size: 3em;
     }
-    
+
     #join_us {
         font-size: 1.4em;
     }
 }
 
 @media (max-width:767px) {
-    
+
     #header_contact {
         min-height: 35em;
     }
@@ -203,14 +205,14 @@ iframe {
     #header_contact h1 {
         font-size: 3em;
     }
-    
+
     #join_us {
         font-size: 1.2em;
     }
 }
 
 @media (max-width:480px) {
-    
+
     #header_contact {
         min-height: 35em;
     }
@@ -218,9 +220,10 @@ iframe {
     #header_contact h1 {
         font-size: 3em;
     }
-    
+
     #join_us {
         font-size: 1.1em;
+        margin-bottom: 10px;
     }
 
     #conteneur-form {
@@ -230,9 +233,9 @@ iframe {
     @keyframes slidein {
         from {
           margin-left: 100%;
-          width: 150%; 
+          width: 150%;
         }
-      
+
         to {
           margin-left: 0%;
           width: 100%;
@@ -240,4 +243,3 @@ iframe {
       }
 
 }
-
