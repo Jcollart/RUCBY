@@ -6,7 +6,7 @@
 <header>
   <nav>
     <div class="nav-logo">
-      <a href="index.php"><img id="logo" src="images/logo-header.png"/></a>
+      <a href="index.php"><img id="logo" src="images/logo_villers.png"/></a>
     </div>
     <div class="nav-btn">
       <label for="nav-check">
