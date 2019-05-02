@@ -16,7 +16,6 @@ nav {
 
 nav > .nav-logo > a > img {
   margin-left: 10px;
-background-color: red;
   height: 65px;
   margin-top: 2px;
 }
@@ -109,11 +108,5 @@ nav > #nav-check {
   nav > .nav-logo > a {
     padding-top: 16px;
     margin-left: 15px;
-  }
-}
-
-@media all and (max-width:1950px) {
-  nav > .nav-logo > a > img {
-    margin-right: 700px;
   }
 }
