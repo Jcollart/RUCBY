@@ -80,6 +80,25 @@ ul#photol1, ul#photol2, ul#photol3 {
   border-radius: 15%;
 }
 
+.galerie {
+  animation-duration: 1s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+/*media*/
+
 @media (max-width:1552px) {
   .photol1 img, .photol2 img, .photol3 img {
       height: 250px;

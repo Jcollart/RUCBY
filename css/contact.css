@@ -161,11 +161,11 @@ iframe {
 
 /******** STYLES DE JOIN US ******/
 #join_us {
-    padding-top: 20px;
-    width: 100%;
-    min-height: 50vh;
+    padding-top: 1%;
+    width: 60%;
     font-size: 1.7em;
-    margin-bottom: 100px;
+    margin-bottom: 1%;
+    margin: 0 auto;
 }
 
 
@@ -177,7 +177,6 @@ iframe {
 @media (max-width:1099px) {
     #join_us {
         font-size: 1.5em;
-        margin-bottom: 10px;
     }
 }
 
@@ -224,7 +223,6 @@ iframe {
 
     #join_us {
         font-size: 1.1em;
-        margin-bottom: 10px;
     }
 
     #conteneur-form {
