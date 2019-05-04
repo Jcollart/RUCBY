@@ -32,7 +32,10 @@
     <article>
         <div id=card>
             <img src="images/futsal.jpg.jpg">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, sapiente. Blanditiis, numquam cupiditate! Magnam inventore 
+            praesentium quibusdam. Voluptatum tempore suscipit cumque doloremque deserunt possimus vero nesciunt incidunt voluptates rem. Veritatis?</p>
         </div>
+        
 
 
     </article>
