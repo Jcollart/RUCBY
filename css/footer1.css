@@ -14,134 +14,43 @@
     justify-content: space-between;
   }
 
-  ul {
-    list-style: none;
-  }
-
-  a {
-    text-decoration: none;
-  }
-
-  .generic-anchor {
-    color: #8DB9ED;
-  }
-  .generic-anchor:visited {
-    color: #8DB9ED;
-  }
-  .generic-anchor:hover {
-    color: #ccc;
-  }
-
-  .flex-rw {
-    display: flex;
-    flex-flow: row wrap;
-    min-height: 35vh;
-  }
+  footer.nb-footer {
+  background: #643A88;
+  border-top: 1px solid black;
+}
 
 
-  footer {
-    background: #6D2878;
-    margin-top: auto;
-    width: 100%;
-  }
+  footer.nb-footer .footer-info-single {
+  margin-top: 30px;
+}
 
-  .footer-list-top {
-    width: 33.333%;
-  }
+  footer.nb-footer .footer-info-single .title {
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-bottom: 30px;
+  border-left: 4px solid black;
+  padding-left: 5px;
+}
 
-  .footer-list-top > li {
-    text-align: center;
-    padding-bottom: 10px;
-  }
+  footer.nb-footer .footer-info-single ul li a {
+  display: block;
+  color: white;
+  margin-left: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 2px 0;
+  text-align: left;
+}
 
-  .footer-list-header {
-    padding: 10px 0 5px 0;
-    color: #fff;
-    font: 2.3vw "Oswald", sans-serif;
-  }
+  footer.nb-footer .footer-info-single ul li a:hover {
+  color: grey;
+  text-decoration: none;
+}
 
-  .footer-list-anchor {
-    font: 1.3em "Open Sans", sans-serif;
-    color: white;
-  }
-
-
-  .footer-social-section::after {
-    content: "";
-    position: absolute;
-    z-index: 1;
-    top: 50%;
-    left: 10px;
-    border-top: 1px solid #ccc;
-    width: calc(100% - 20px);
-  }
-
-  .footer-social-overlap {
-    position: relative;
-    z-index: 2;
-    background: #373737;
-    padding: 0 20px;
-  }
-
-  .footer-social-connect {
-    display: flex;
-    align-items: center;
-    font: 3.5em "Oswald", sans-serif;
-    color: #fff;
-  }
-
-  .footer-social-small {
-    font-size: 0.6em;
-    padding: 0px 20px;
-  }
-
-  .footer-bottom-section > div:first-child {
-    margin-right: auto;
-  }
-
-  .footer-bottom-wrapper {
-    font-size: 1.5em;
-    color: #fff;
-  }
-
-  .footer-address {
-    display: inline;
-    font-style: normal;
-  }
-
-  @media (min-width: 1750px) {
-
-      .flex-rw {
-        min-height: 30vh;
-      }
-
-      .footer-list-anchor {
-        font: 1.8em "Open Sans", sans-serif;
-      }
-
-      .footer-bottom-wrapper {
-        font-size: 1.8em;
-      }
-  }
-
-  @media (max-width:991px) {
-
-    .flex-rw {
-      min-height: vh;
-    }
-  }
-
-  @media (max-width: 480px) {
-
-    .flex-rw {
-      min-height: vh;
-    }
-
-    .footer-list-anchor {
-      font: 1em "Open Sans", sans-serif;
-    }
-
-    .footer-bottom-wrapper {
-      font-size: 1em;
-    }
-  }
+  footer.nb-footer .footer-info-single p {
+  font-size: 13px;
+  line-height: 20px;
+  color: white;
+}
