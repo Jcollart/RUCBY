@@ -25,26 +25,29 @@
 
     <div id=conteneur_texte>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ipsa, quas expedita sint, impedit ex earum
-            consequatur repudiandae nesciunt labore dolore quo suscipit reiciendis, rem debitis sed atque! Quas, et!
+            consequatur repudianda nesciunt labore dolore quo suscipit reiciendis, rem debitis sed atque! Quas, et!
         </p>
     </div>
 
-    <article>
-        <div id=card>
-            <img src="images/futsal.jpg.jpg">
+    <!--- ARTICLE NEWS --->
+        <article id=news>
+            
+            <div id=image_article><img src="images/futsal.jpg.jpg"></div>
+            <div id=contenu_article>
+            <h1>Titre article</h1>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, sapiente. Blanditiis, numquam cupiditate! Magnam inventore 
-            praesentium quibusdam. Voluptatum tempore suscipit cumque doloremque deserunt possimus vero nesciunt incidunt voluptates rem. Veritatis?</p>
-        </div>
+            praesentium quibusdam. Voluptatum tempore suscipit cumque doloremque deserunt possimus vero nesciunt incidunt voluptates rem. Veritatis?<br>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum repudiandae exercitationem veniam non? Vitae itaque doloremque, sunt sint nam sapiente optio, facilis dolorem ab quam aliquid id explicabo earum non.
+        </p>
+</div>
+
+</article>
         
 
 
-    </article>
-
-
-    <!--- CARD NEWS --->
+    <!--- ARTICLE NEWS --->
 
     
-
 
 
 
