@@ -48,7 +48,7 @@
 	<!--FIN MOT DU PRESIDENT-->
 
 	<!--PARRALAX-->
-	<div class="parallax-window" data-parallax="scroll" data-image-src="images/piscine.jpg" alt=""></div>
+	<div class="parallax-window" data-parallax="scroll" data-image-src="images/parallax.jpg" alt=""></div>
 	<!--FIN PARRALAX-->
 
 	<!--A PROPOS-->
