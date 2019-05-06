@@ -18,7 +18,7 @@ body {
     display: flex;
     justify-content: center;
     width: 100%;
-    min-height: 20em;
+    min-height: 45em;
     background-image: url(../images/f1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -29,7 +29,7 @@ body {
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 8em;
+    height: 10em;
     margin-top: auto;
     margin-bottom: auto;
     background-color: rgba(000, 0, 0, 0.5)
@@ -39,7 +39,7 @@ body {
     font-size: 6em;
     color: #6D2878;
     witdh:100%:
-    height:600em
+    height:100em
     margin-top: auto;
     
 }
@@ -50,12 +50,14 @@ p {
 }
 
 #choix_rubphoto {
-    display:inline-flexbox;
-     
+    justify-content: center;
+    align-items: center;
+    display:inline-flex;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
     background-color: white;
-    text-align: left;
+    text-align:center;
+    height: 400px;
 
 }

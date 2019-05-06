@@ -42,37 +42,34 @@
   </div>
 
   <div id="choix_rubphoto">
-    <div class="card" style="width: 16rem;">
-      <img class="card-img-top" src="images/mondial2019.jpg" alt="Card image cap">
+    <div class="card" style=<img class="card-img-top" src="images/mondial2019.jpg" alt="Card image cap">"width: 19em;">
       <div class="card-body">
-        <h5 class="card-title">IMAGES EVENEMENTS</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-          content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <h5 class="card-title">IMAGES TOURNOI</h5>
+        <p class="card-text"></p>
+        <a href="galerie.php" class="btn btn-primary">allez zone tournoi</a>
       </div>
     </div>
-    <div class="card" style="width: 16rem;">
+    <div class="card" style="width: 16em;">
       <img class="card-img-top" src="images/futsal.jpg" alt="Card image cap">
       <div class="card-body">
         <h5 class="card-title">IMAGES MATCHS</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-          content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <p class="card-text">quelques images</p>
+        <a href="galerie.php" class="btn btn-primary">allez zone match</a>
       </div>
     </div>
-    <div class="card" style="width: 16rem;">
+    <div class="card" style="width: 16em;">
       <img class="card-img-top" src="images/soireefutsal.jpg" alt="Card image cap">
       <div class="card-body">
         <h5 class="card-title">IMAGES SOIREES</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-          content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <p class="card-text"></p>
+        <a href="galerie.php" class="btn btn-primary">allez zone soirée</a>
       </div>
     </div>
 
   </div>
-
-
+ 
+  <?php include('footer1.php'); ?>
+<?php include('footer2.php');?>
  
 
 </body>
