@@ -14,6 +14,139 @@
     justify-content: space-between;
   }
 
+<<<<<<< HEAD
+  ul {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .generic-anchor {
+    color: #8DB9ED;
+  }
+  .generic-anchor:visited {
+    color: #8DB9ED;
+  }
+  .generic-anchor:hover {
+    color: #ccc;
+  }
+
+  .flex-rw {
+    display: flex;
+    flex-flow: row wrap;
+    min-height: 35vh;
+  }
+
+
+  footer {
+    background: #6D2878;
+    margin-top: auto;
+    width: 100%;
+  }
+
+  .footer-list-top {
+    width: 33.333%;
+  }
+
+  .footer-list-top > li {
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  .footer-list-header {
+    padding: 10px 0 5px 0;
+    color: #fff;
+    font: 2.3vw "Oswald", sans-serif;
+  }
+
+  .footer-list-anchor {
+    font: 1.3em "Open Sans", sans-serif;
+    color: white;
+  }
+
+
+  .footer-social-section::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 10px;
+    border-top: 1px solid #ccc;
+    width: calc(100% - 20px);
+  }
+
+  .footer-social-overlap {
+    position: relative;
+    z-index: 2;
+    background: #373737;
+    padding: 0 20px;
+  }
+
+  .footer-social-connect {
+    display: flex;
+    align-items: center;
+    font: 3.5em "Oswald", sans-serif;
+    color: #fff;
+  }
+
+  .footer-social-small {
+    font-size: 0.6em;
+    padding: 0px 20px;
+  }
+
+  .footer-bottom-section > div:first-child {
+    margin-right: auto;
+  }
+
+  .footer-bottom-wrapper {
+    font-size: 1.5em;
+    color: #fff;
+  }
+
+  .footer-address {
+    display: inline;
+    font-style: normal;
+  }
+
+  @media (min-width: 1750px) {
+
+      .flex-rw {
+        
+      }
+
+      .footer-list-anchor {
+        font: 1.8em "Open Sans", sans-serif;
+      }
+
+      .footer-bottom-wrapper {
+        font-size: 1.8em;
+      }
+  }
+
+  @media (max-width:991px) {
+
+    .flex-rw {
+     
+    }
+  }
+
+  @media (max-width: 480px) {
+
+    .flex-rw {
+     
+    }
+
+    .footer-list-anchor {
+      font: 1em "Open Sans", sans-serif;
+    }
+
+    .footer-bottom-wrapper {
+      font-size: 1em;
+    }
+  }
+=======
   footer.nb-footer {
   background: #643A88;
   border-top: 1px solid black;
@@ -49,3 +182,13 @@
   color: grey;
   text-decoration: none;
 }
+<<<<<<< HEAD
+=======
+
+  footer.nb-footer .footer-info-single p {
+  font-size: 13px;
+  line-height: 20px;
+  color: white;
+}
+>>>>>>> 289e68a13c2f1e42095b339b6098eb030eb0652a
+>>>>>>> d7619e07b1979a3f8a4f2a5f2b87a9bc5843372f
