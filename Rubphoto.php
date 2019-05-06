@@ -59,18 +59,12 @@
     </div>
 
   </div>
-
-
-<<<<<<< HEAD
     </div>
-
+    <?php include('footer.php');?>
     <?php include('footer2.php');?>
 </body>
 </html>
-=======
-
 
 </body>
 
 </html>
->>>>>>> d7619e07b1979a3f8a4f2a5f2b87a9bc5843372f
