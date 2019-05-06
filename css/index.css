@@ -226,17 +226,16 @@ h2  {
 
 .aPimg img {
     width: 80%;
-    max-width: 400px;
+    max-width: 350px;
     margin-right: 20px;
 }
 
 .aPtexte {
     width: 55%;
     float: left;
-    height: auto;
     font-size: 1.8em;
     margin-left : 50px;
-    margin-top: 5%;
+    margin-top: 2%;
 }
 
 @media all and (max-width:1199px) {
