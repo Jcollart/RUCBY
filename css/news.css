@@ -55,8 +55,8 @@ body {
     justify-content: center;
 }
 
-#conteneur_texte p {
-    font-size: 2em;
+font-size: 2em;
+    #conteneur_texte p {
     width: 60%;
     text-justify: left;
 }
@@ -69,26 +69,28 @@ body {
     flex-wrap: wrap;
     margin-left: auto;
     margin-right: auto;
+    background-color: rgb(250, 250, 246);
+    box-shadow: 2px 2px 2px rgb(226, 208, 208);
 }
 
-#image_article{
-    flex:1;
-    margin:1em;
+#image_article {
+    flex: 1;
+    margin: 0em;
 }
 
-#image_article img{
-    width:100%;
+#image_article img {
+    width: 100%;
     height: auto;
 }
 
 #contenu_article {
-    flex:2;
-    margin:1em;
+    flex: 2;
+    margin: 1em;
 }
 
-#contenu_article h1{
-    font-size:1.5em;
-text-align: left;
+#contenu_article h1 {
+    font-size: 1.5em;
+    text-align: left;
 }
 
 #contenu_article p {
