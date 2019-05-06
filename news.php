@@ -8,7 +8,7 @@
     <title>Les News</title>
 </head>
 <body>
-<?php include('header.php'); ?>
+<?php include('header2.php'); ?>
 
     <!--HEADER NEWS-->
 
@@ -21,9 +21,9 @@
 
 
 
-    
+
     <?php include('footer1.php'); ?>
     <?php include('footer2.php'); ?>
-    
+
 </body>
 </html>

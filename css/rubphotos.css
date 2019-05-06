@@ -44,49 +44,14 @@ body {
     
 }
 
-#col1evenement {
-    position: absolute;
-    left:0px;
-    width: 33%;
-    background-color: #ffffff;
-    padding-left:5px;
-    padding-right:5px;
-    text-align: center;
-    
-
-}
-
-#col2match {
-    position: absolute;
-    width: 33%;
-    background:#ffffff;
-    margin-left:530px;
-    margin-right:0px;
-    padding-left:5px;
-    padding-right:5px;
-    justify-content: center;
-    text-align: center;
-    
-    
-}
-
-#col3soiree {
-    position: absolute;
-    right:0px;
-    width: 33%;
-    background-color: #ffffff;
-    padding-left: 5px;
-    padding-right: 5px;
-    text-align:center;
-}
-
 p {
     background-color: aliceblue;
 
 }
 
 #choix_rubphoto {
-    position: relative;
+    display:inline-flexbox;
+     
     margin-left: auto;
     margin-right: auto;
     width: 100%;

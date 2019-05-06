@@ -6,7 +6,7 @@
 <header>
   <nav>
     <div class="nav-logo">
-      <a href="index.php"><img id="logo" src="images/logo-header.png"/></a>
+      <a href="index.php"><img id="logo" src="images/logo_villers.png"/></a>
     </div>
     <div class="nav-btn">
       <label for="nav-check">
@@ -17,8 +17,8 @@
     </div>
     <input type="checkbox" id="nav-check">
     <div class="nav-links">
-      <a href="rank.php">classements</a>
-      <a href="#news">news</a>
+      <a href="rank.php">classement</a>
+      <a href="news.php">nouveautés</a>
       <a href="Rubphoto.php">rubrique-photo</a>
       <a href="galerie.php">galerie</a>
       <a href="contact.php">contact</a>

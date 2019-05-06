@@ -4,9 +4,9 @@ html, body {
 }
 
 nav {
-  height: 70px;
+  height: 65px;
   width: 100%;
-  background-color: #6D2878;
+  background-color: #452461;
   position: relative;
   text-transform: uppercase;
   position: fixed;
@@ -15,9 +15,8 @@ nav {
 }
 
 nav > .nav-logo > a > img {
-  margin-left: 10px;
-background-color: red;
-  height: 65px;
+  margin-right: 50px;
+  height: 55px;
   margin-top: 2px;
 }
 
@@ -32,7 +31,7 @@ nav > .nav-btn {
 nav > .nav-links {
   display: inline;
   float: right;
-  font-size: 17px;
+  font-size: 14px;
   margin-top: 12px;
   word-spacing: 50px;
 }
@@ -47,6 +46,7 @@ nav > .nav-links > a {
   letter-spacing: .5px;
   text-decoration: none;
   color: white;
+  font-weight: bold;
 }
 
 nav > .nav-links > a:hover {
@@ -57,7 +57,7 @@ nav > #nav-check {
   display: none;
 }
 
-@media all and (max-width:1200px) {
+@media screen and (max-width:1200px) {
   nav > .nav-btn {
     display: inline-block;
     position: absolute;
@@ -85,7 +85,7 @@ nav > #nav-check {
     height: 100px;
     transition: all 0.3s ease-in;
     overflow-x: hidden;
-    top: 55px;
+    top: 45px;
     left: 0px;
   }
   nav > .nav-links > a {
@@ -95,14 +95,14 @@ nav > #nav-check {
   }
 
   nav > .nav-links > a:hover {
-    color: blue;
+    color: grey;
   }
 
   nav > #nav-check:not(:checked) + .nav-links {
     height: 0px;
   }
   nav > #nav-check:checked + .nav-links {
-    height: calc(45vh - 25px);
+    height: calc(45vh - 30px);
     overflow-y: auto;
   }
 
@@ -112,8 +112,22 @@ nav > #nav-check {
   }
 }
 
-@media all and (max-width:1950px) {
-  nav > .nav-logo > a > img {
-    margin-right: 700px;
+@media screen and (max-width:1920px) {
+nav > .nav-logo > a > img {
+  margin-right: 800px;
+  }
+}
+
+@media screen and (max-width:1520px) {
+nav > .nav-logo > a > img {
+  margin-right: 400px;
+  margin-top: 2px;
+  }
+}
+
+@media screen and (max-width:1320px) {
+nav > .nav-logo > a > img {
+  margin-right: 300px;
+  margin-top: 2px;
   }
 }
