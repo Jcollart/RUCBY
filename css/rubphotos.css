@@ -41,21 +41,18 @@ body {
     witdh:100%:
     height:600em
     margin-top: auto;
-    
+
 }
 
 p {
     background-color: aliceblue;
-
 }
 
 #choix_rubphoto {
-    display:inline-flexbox;
-     
+    display: inline-flex;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
     background-color: white;
     text-align: left;
-
 }
