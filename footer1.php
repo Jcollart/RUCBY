@@ -13,9 +13,9 @@
        <div class="footer-info-single">
        	<h2 class="title">Informations</h2>
        	<ul class="list-unstyled">
-          <li><a href="rank.php" title=""><i class="fa fa-angle-double-right"></i> Classement</a></li>
-       		<li><a href="news.php" title=""><i class="fa fa-angle-double-right"></i> Nouveautés</a></li>
-       		<li><a href="contact.php" title=""><i class="fa fa-angle-double-right"></i> Nous Contacter</a></li>
+          <li><a href="rank.php" title="">Classement</a></li>
+       		<li><a href="news.php" title="">Nouveautés</a></li>
+       		<li><a href="contact.php" title="">Nous Contacter</a></li>
 
        	</ul>
        </div>
@@ -25,8 +25,8 @@
        <div class="footer-info-single">
        	<h2 class="title">Photos</h2>
        	<ul class="list-unstyled">
-          <li><a href="Rubphoto.php" title=""><i class="fa fa-angle-double-right"></i> Rubrique-Photo</a></li>
-       		<li><a href="galerie.php" title=""><i class="fa fa-angle-double-right"></i> Galerie</a></li>
+          <li><a href="Rubphoto.php" title="">Rubrique-Photo</a></li>
+       		<li><a href="galerie.php" title="">Galerie</a></li>
        	</ul>
        </div>
        </div>
@@ -35,9 +35,9 @@
        <div class="footer-info-single">
        	<h2 class="title">Plus D'infos</h2>
        	<ul class="list-unstyled">
-       		<li><a href="#" title=""><i class="fa fa-angle-double-right"></i> Mentions Légales</a></li>
-       		<li><a href="#" title=""><i class="fa fa-angle-double-right"></i> A Propos</a></li>
-       		<li><a href="#" title=""><i class="fa fa-angle-double-right"></i> Plan</a></li>
+       		<li><a href="#" title="">Mentions Légales</a></li>
+       		<li><a href="#" title="">A Propos</a></li>
+       		<li><a href="#" title="">Plan</a></li>
        	</ul>
        </div>
        </div>

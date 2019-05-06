@@ -41,23 +41,30 @@ body {
     witdh:100%:
     height:100em
     margin-top: auto;
-    
+
 }
 
 p {
     background-color: aliceblue;
-
 }
 
 #choix_rubphoto {
+<<<<<<< HEAD
     justify-content: center;
     align-items: center;
     display:inline-flex;
+=======
+    display: inline-flex;
+>>>>>>> 395c1acee879183c1fc27005422c6d46cb77b27a
     margin-left: auto;
     margin-right: auto;
     width: 100%;
     background-color: white;
+<<<<<<< HEAD
     text-align:center;
     height: 400px;
 
+=======
+    text-align: left;
+>>>>>>> 395c1acee879183c1fc27005422c6d46cb77b27a
 }
