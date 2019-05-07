@@ -10,7 +10,7 @@ $(document).ready(function(){
       }
 
       else{
-          $("nav").css("opacity" , "0.6");
+          $("nav").css("opacity" , "0.8");
       }
   })
 })

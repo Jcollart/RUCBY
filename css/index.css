@@ -17,31 +17,11 @@ h2  {
     font-size: 2em;
 }
 
-
-
-
 /*************/
 /* PRESIDENT */
 /*************/
-
-
-.presentation {
-    width: 100%;
-    animation-duration: 2s;
-    animation-name: coucou;
-    margin:1%;
-}
-
-@keyframes coucou {
-    from {
-      margin-left: 100%;
-      width: 300%;
-    }
-
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
+#carouselExampleControls {
+  margin-top: 4%;
 }
 
 .pImg {
@@ -49,23 +29,27 @@ h2  {
     float: left;
     height: auto;
     background: white;
-
 }
 
 
 .pImg img {
     width: 80%;
-    max-width: 400px;
-    margin-left: 20px;
+    max-width: 300px;
+    margin-left: 50px;
 }
 
-.pTexte {
+.pTexte > p {
     width: 55%;
     float: right;
     height: auto;
-    font-size: 1.7em;
+    font-size: 1.5em;
     margin-right: 60px;
-    margin-top: 30px;
+    margin-top: 10px;
+}
+
+.pTexte > h2 {
+  text-align: center;
+  font-size: 3em;
 }
 
 @media all and (max-width:1099px) {

@@ -43,7 +43,7 @@
 	<!--MOT DU PRESIDENT-->
 	<div class="presentation">
 		<div class="pImg">
-			<img src="images/president.jpeg" alt="Président">
+			<img src="images/logo_villers.png" alt="Président">
 		</div>
 		<div class="pTexte">
 			<h2>Un mot du président</h2><br>
