@@ -41,6 +41,7 @@
 	<!--FIN SLIDER-->
 
 	<!--MOT DU PRESIDENT-->
+
 	<div class="presentation">
 		<div class="pImg">
 			<img src="images/logo_villers.png" alt="Président">
