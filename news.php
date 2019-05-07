@@ -42,15 +42,15 @@
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum repudiandae exercitationem veniam non?
                 Vitae itaque doloremque, sunt sint nam sapiente optio, facilis dolorem ab quam aliquid id explicabo
                 earum non.
-                
+
             </p>
         </div>
 
     </article>
-    
+
     <article id=news>
 
-        
+
         <div id=contenu_article>
             <h1>Titre article</h1>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, sapiente. Blanditiis, numquam
@@ -60,14 +60,14 @@
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum repudiandae exercitationem veniam non?
                 Vitae itaque doloremque, sunt sint nam sapiente optio, facilis dolorem ab quam aliquid id explicabo
                 earum non.
-                
+
             </p>
         </div>
         <div id=image_article><img src="images/futsal.jpg.jpg"></div>
 
     </article>
 
-    
+
 
 
 
@@ -78,8 +78,7 @@
 
 
 
-    <?php include('footer1.php'); ?>
-    <?php include('footer2.php'); ?>
+    <?php include('footer.php'); ?>
 
 </body>
 
