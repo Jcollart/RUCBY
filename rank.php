@@ -1,14 +1,10 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-
         <meta charset="utf-8"/>
         <link rel="stylesheet" href="css/rank.css"/>
-
         <title>Classements</title>
-
     </head>
-
     <body>
       <?php include('header2.php');?>
 
@@ -144,8 +140,7 @@
         </table></center>
       </div>
 
-      <?php include('footer1.php'); ?>
-      <?php include('footer2.php');?>
+      <?php include('footer.php'); ?>
     </body>
 
 </html>

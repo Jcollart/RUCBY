@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300');
+@import url('http://weloveiconfonts.com/api/?family=entypo');
+
 * {
     box-sizing: border-box;
   }
@@ -145,7 +148,6 @@
       font-size: 1em;
     }
   }
-=======
   footer.nb-footer {
   background: #643A88;
   border-top: 1px solid black;
@@ -181,13 +183,102 @@
   color: grey;
   text-decoration: none;
 }
-<<<<<<< HEAD
-=======
 
   footer.nb-footer .footer-info-single p {
   font-size: 13px;
   line-height: 20px;
   color: white;
 }
->>>>>>> 289e68a13c2f1e42095b339b6098eb030eb0652a
->>>>>>> d7619e07b1979a3f8a4f2a5f2b87a9bc5843372f
+
+.footer2 {
+  padding: 20px 0;
+  text-align: center;
+  min-height: 10vh;
+  background-color: #643A88;
+}
+
+.social {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+  line-height: 50px;
+  font-family: Entypo;
+  font-size: 30px;
+  text-align: center;
+  color: rgb(216, 196, 196);
+  border-radius: 50%;
+  background: white;
+  overflow: hidden;
+  transition: color .2s;
+}
+
+.social:hover {
+  color: #6D2878;
+  cursor: pointer;
+}
+
+
+@media (min-width: 1750px) {
+  .footer2 {
+    padding: 20px 0;
+
+  }
+
+  .social {
+    width: 70px;
+    height: 70px;
+    margin-right: 2em;
+    line-height: 70px;
+    font-size: 35px;
+  }
+}
+
+@media (max-width:991px) {
+  .footer2 {
+    padding: 20px 0;
+    min-height: 10vh;
+  }
+
+  .social {
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    line-height: 50px;
+    font-size: 30px;
+  }
+}
+
+@media (max-width:776px) {
+  .footer2 {
+    padding: 20px 0;
+    min-height: 10vh;
+  }
+
+  .social {
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    line-height: 50px;
+    font-size: 30px;
+    margin-left: 40px;
+  }
+}
+
+@media (max-width:480px) {
+  .footer2 {
+    padding: 20px 0;
+    min-height: 10vh;
+  }
+
+  .social {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 50px;
+  }
+
+  .social {
+    box-shadow: none;
+  }
+}

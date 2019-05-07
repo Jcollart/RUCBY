@@ -6,12 +6,13 @@ html, body {
 nav {
   height: 65px;
   width: 100%;
-  background-color: #452461;
+  background-color: black;
   position: relative;
   text-transform: uppercase;
   position: fixed;
   z-index: 1030;
   opacity: 0.8;
+  border-bottom: solid #452461;
 }
 
 nav > .nav-logo > a > img {
