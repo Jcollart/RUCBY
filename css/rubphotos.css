@@ -5,7 +5,7 @@ html {
 body {
     position: relative;
     background-color: white;
-    min-height: 100%;
+    /*min-height: 100%;*/
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -37,7 +37,7 @@ body {
 
 #bloc_rubphotos h1 {
     font-size: 6em;
-    color: #6D2878;
+    color: white;
     witdh:100%:
     height:100em
     margin-top: auto;
@@ -49,22 +49,54 @@ p {
 }
 
 #choix_rubphoto {
-<<<<<<< HEAD
+    display:flex;
     justify-content: center;
-    align-items: center;
-    display:inline-flex;
-=======
-    display: inline-flex;
->>>>>>> 395c1acee879183c1fc27005422c6d46cb77b27a
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    background-color: white;
-<<<<<<< HEAD
-    text-align:center;
-    height: 400px;
-
-=======
-    text-align: left;
->>>>>>> 395c1acee879183c1fc27005422c6d46cb77b27a
+    width:100%;
+    height:600px;
+    animation-duration: 1s;
+    animation-name: slidein;
 }
+
+#cotegauche {
+    display:wrap;
+    flex: 1;
+    min-height: 400px;
+    border-radius: 50%;
+
+}   
+#cotemilieu {
+    display:wrap; 
+    flex:1;
+    min-height: 400px;
+    border-radius: 50%;
+}
+
+#cotedroit {
+    display:wrap;
+    flex: 1;
+    min-height: 400px;
+    border-radius: 50%;
+}
+
+h1 {
+    color: #6D2878;
+    witdh:100%: 
+}
+
+img {
+    border: solid 4px #6D2878;
+    
+  }
+  
+  @keyframes slidein {
+      from {
+        margin-left: 100%;
+        width: 300%;
+      }
+  
+      to {
+        margin-left: 0%;
+        width: 100%;
+      }
+    }
+  
