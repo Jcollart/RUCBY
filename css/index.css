@@ -17,142 +17,59 @@ h2  {
     font-size: 2em;
 }
 
-
-
-/***********/
-/* *SLIDER **/
-/***********/
-
-#slider {
-    overflow: hiden;
-    height: em;
-}
-
-#slider figure {
-    position: relative;
-    width: 500%;
-    margin: 0;
-    left: 0;
-    animation: 20s slider infinite;
-}
-
-#slider figure img {
-    width: 20%;
-    float: left;
-}
-
-
-
-@keyframes slider {
-    0% {
-        left: 0;
-    }
-
-    20% {
-        left: 0;
-    }
-
-    25% {
-        left: -100%;
-    }
-
-    45% {
-        left: -100%;
-    }
-
-    50% {
-        left: -200%;
-    }
-
-    70% {
-        left: -200%;
-    }
-
-    75% {
-        left: -300%;
-    }
-
-    85% {
-        left: -300%;
-    }
-
-    95% {
-        left: -400%;
-    }
+#carouselExampleControls {
+  margin-top: 3%;
 }
 
 /*************/
 /* PRESIDENT */
 /*************/
 
-
 .presentation {
-    width: 100%;
-    animation-duration: 2s;
-    animation-name: coucou;
-    margin:1%;
-}
-
-@keyframes coucou {
-    from {
-      margin-left: 100%;
-      width: 300%;
-    }
-
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
+    margin: 1% 10%;
+    border: 1px solid black;
+    background-color: rgb(250, 250, 246);
+    box-shadow: 5px 5px 5px rgb(226, 208, 208);
 }
 
 .pImg {
     width: 35%;
     float: left;
-    height: auto;
-    background: white;
-
+    margin: 1%;
 }
 
 
 .pImg img {
     width: 80%;
-    max-width: 400px;
-    margin-left: 20px;
+    max-width: 300px;
 }
 
-.pTexte {
+.pTexte > p {
     width: 55%;
     float: right;
     height: auto;
-    font-size: 1.7em;
+    font-size: 1.5em;
     margin-right: 60px;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
-@media all and (max-width:1099px) {
-    .presentation {
-        margin-top: 1%;
-    }
-
-    .pTexte {
-        font-size: 1.4em;
-        margin-right: 40px;
-    }
-
-    #slider {
-        margin-top: 6%;
-    }
+.pTexte > h2 {
+  text-align: center;
+  font-size: 3em;
 }
 
 @media (max-width:991px) {
-    .presentation {
+.presentation {
         margin-top: px;
     }
 
-    .pTexte {
-        font-size: 1.2em;
-        margin-right: 40px;
-    }
+.pTexte > h2 {
+      font-size: 2em;
+}
+
+.pTexte > p {
+
+    font-size: 1.5em;
 }
 
 @media (max-width:767px) {
@@ -168,10 +85,6 @@ h2  {
     .pTexte {
         font-size: 1em;
         margin-right: 20px;
-    }
-
-    #slider {
-        margin-top: 7%;
     }
 }
 
@@ -192,10 +105,6 @@ h2  {
     .pTexte {
         font-size: 0.8em;
         margin-right: 20px;
-    }
-
-    #slider {
-        margin-top: %;
     }
 }
 

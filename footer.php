@@ -1,6 +1,6 @@
 <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-      	<link rel="stylesheet" href="css/footer1.css">
+      	<link rel="stylesheet" href="css/footer.css">
         <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
          <link href='//netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' rel='stylesheet'/>
 
@@ -42,5 +42,10 @@
        </div>
        </div>
        </div>
+       </div>
+       <div class="footer2">
+         <div class="social">&#62220;</div>
+         <div class="social">&#62217;</div>
+         <div class="social">&#62235;</div>
        </div>
        </footer>

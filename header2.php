@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="css/header.css" />
+<link rel="stylesheet" href="css/header2.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 
@@ -17,7 +17,7 @@
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
     <a href="rank.php">classements</a>
-    <a href="news.php">news</a>
+    <a href="news.php">nouveautés</a>
     <a href="Rubphoto.php">rubrique-photo</a>
     <a href="galerie.php">galerie</a>
     <a href="contact.php">contact</a>

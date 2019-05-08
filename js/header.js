@@ -5,12 +5,12 @@ $(document).ready(function(){
         $("nav").css("opacity" , "1");
       }
 
-      else if (scroll < 1) {
+      else if (scroll < 150) {
         $("nav").css("opacity" , "1");
       }
 
       else{
-          $("nav").css("opacity" , "0.6");
+          $("nav").css("opacity" , "0.8");
       }
   })
 })

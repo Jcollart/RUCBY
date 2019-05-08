@@ -105,8 +105,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
-    <?php include('footer1.php'); ?>
-    <?php include('footer2.php'); ?>
+    <?php include('footer.php'); ?>
 </body>
 
 
