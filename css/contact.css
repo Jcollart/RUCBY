@@ -1,3 +1,19 @@
+html {
+    height: 100%;
+}
+
+body {
+    position: relative;
+    background-color: white;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: "Arvo";
+    
+}
+
+
 #header_contact {
     display: flex;
     justify-content: center;
@@ -97,7 +113,7 @@ legend {
 #bouton-form{
   animation-duration: 4s;
     animation-name: slidein;
-
+    text-align: center;
 }
 
 @keyframes slidein {
