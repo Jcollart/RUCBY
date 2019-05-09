@@ -3,14 +3,14 @@
     <head>
         <meta charset="utf-8"/>
         <link rel="stylesheet" href="css/rank.css"/>
-        <title>Classements</title>
+        <title>Classement</title>
     </head>
     <body>
       <?php include('header2.php');?>
 
         <div id="bloc_classements">
           <div id="cadre_titre">
-            <h1>CLASSEMENTS</h1>
+            <h1>CLASSEMENT</h1>
           </div>
         </div>
 

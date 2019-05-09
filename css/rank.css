@@ -49,20 +49,23 @@
   border: 2px solid white;
   padding: 10px;
   text-align: center;
-  font-size: 3em;
+  font-size: 2em;
+  color: white;
 }
 
 .tableau td{
   border: 2px solid white;
   padding: 10px;
   text-align: center;
-  font-size: 2.5em;
+  font-size: 1.7em;
   background-color: #b653c6;
+  color: white;
+
 }
 
 .tableau table{
   border-collapse: collapse;
-  width: 90%;
+  width: 60%;
   border-radius: 20px;
   overflow: hidden;
 }
@@ -115,6 +118,7 @@
   font-size: 2.5em;
   font-weight: normal;
   border-radius: 20px;
+  color: white;
 }
 
 .tabl_next_day td{
@@ -126,7 +130,7 @@
 
 .tabl_next_day table{
   border-collapse: collapse;
-  width: 80%;
+  width: 60%;
 }
 
 /*media queries*/
