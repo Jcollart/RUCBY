@@ -63,6 +63,7 @@
 
 	<!--PARRALAX-->
 	<div class="parallax-window" data-parallax="scroll" data-image-src="images/parallax.jpg" alt=""></div>
+
 	<!--FIN PARRALAX-->
 
 	<!--A PROPOS-->

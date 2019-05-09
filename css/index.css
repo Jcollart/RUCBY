@@ -32,172 +32,17 @@ h2  {
     box-shadow: 5px 5px 5px rgb(226, 208, 208);
 }
 
-.pImg {
-    width: 35%;
-    float: left;
-    margin: 1%;
-}
 
-
-.pImg img {
-    width: 80%;
-    max-width: 300px;
-}
-
-.pTexte > p {
-    width: 55%;
-    float: right;
-    height: auto;
-    font-size: 1.5em;
-    margin-right: 60px;
-    margin-top: 10px;
-}
-
-.pTexte > h2 {
-  text-align: center;
-  font-size: 3em;
-}
-
-@media (max-width:991px) {
-.presentation {
-        margin-top: px;
-    }
-
-.pTexte > h2 {
-      font-size: 2em;
-}
-
-.pTexte > p {
-
-    font-size: 1.5em;
-}
-
-@media (max-width:767px) {
-    .presentation {
-        margin: 1%;
-    }
-
-    .pImg img {
-        margin-top: 20px;
-        margin-left: 20px;
-    }
-
-    .pTexte {
-        font-size: 1em;
-        margin-right: 20px;
-    }
-}
-
-@media (max-width:480px) {
-
-    h2 {
-        font-size: 1.5em;
-    }
-    .presentation {
-        margin-top: 20px;
-    }
-
-    .pImg img {
-        margin-top: 0px;
-        margin-left: 0px;
-    }
-
-    .pTexte {
-        font-size: 0.8em;
-        margin-right: 20px;
-    }
-}
 
 /*************/
 /** PARRALAX**/
 /*************/
 
 .parallax-window {
-    min-height: 40%;
-    background: transparent;
+    min-height: 35%;
+    background: transparet;
 }
 
 /*************/
 /** A PROPOS**/
 /*************/
-
-.aPropos {
-    width: 100%;
-    margin: 1%;
-}
-
-.aPimg{
-    width: 35%;
-    float: right;
-    height: auto;
-    background: white;
-}
-
-.aPimg img {
-    width: 80%;
-    max-width: 350px;
-    margin-right: 20px;
-}
-
-.aPtexte {
-    width: 55%;
-    float: left;
-    font-size: 1.8em;
-    margin-left : 50px;
-    margin-top: 2%;
-}
-
-@media all and (max-width:1199px) {
-
-
-    .aPimg img {
-        margin-right: 20px;
-        margin-top: 20px;
-    }
-
-
-    .aPtexte {
-        font-size: 1.5em;
-        margin-left : 50px;
-    }
-}
-
-@media (max-width:991px) {
-
-
-    .aPimg img {
-        margin-right: 20px;
-        margin-top: 40px;
-    }
-
-
-    .aPtexte {
-        font-size: 1.2em;
-        margin-left : 50px;
-    }
-}
-
-@media (max-width:767px) {
-
-
-
-    .aPtexte {
-        font-size: 1em;
-        margin-left : 30px;
-        margin-top: 3%;
-    }
-}
-
-@media (max-width:480px) {
-
-
-    .aPtexte {
-        font-size: 0.8em;
-        margin-left : 5px;
-        margin-top: 0%;
-    }
-    .aPimg img {
-        margin-right: 20px;
-        margin-top: 70px;
-    }
-}
