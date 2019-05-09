@@ -5,11 +5,13 @@ html {
 body {
     position: relative;
     background-color: white;
-    /*min-height: 100%;*/
+    min-height: 100%;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
     font-family: "Arvo";
+    
+
 }
 
 #bloc_rubphotos {
@@ -51,7 +53,7 @@ p {
     display:flex;
     justify-content: center;
     width:100%;
-    height:600px;
+    height:400px;
     animation-duration: 1s;
     animation-name: slidein;
     text-align: center;
@@ -62,39 +64,40 @@ p {
     flex: 1;
     min-height: 400px;
     border:2px solid black;
--moz-border-radius:7px;
--webkit-border-radius:7px;
-border:2px solid black;
--moz-border-radius:7px;
--webkit-border-radius:7px;
-border-radius:7px;
-}
+    -moz-border-radius:7px;
+    -webkit-border-radius:7px;
+    border-radius:7px;
+        margin: 1em;
+        background-color: rgb(250, 250, 250);
+        box-shadow: 5px 5px 5px rgb(226, 208, 208);
+    }
 #cotemilieu {
     display:wrap;
-    flex:1;
+    flex: 1;
     min-height: 400px;
     border:2px solid black;
--moz-border-radius:7px;
--webkit-border-radius:7px;
-border-radius:7px;
+    -moz-border-radius:7px;
+    -webkit-border-radius:7px;
+    border-radius:7px;
+        margin: 1em;
+        background-color: rgb(250, 250, 250);
+        box-shadow: 5px 5px 5px rgb(226, 208, 208);
+    }
 
-    margin: 1em;
-    background-color: rgb(250, 250, 206);
-    box-shadow: 5px 5px 5px rgb(226, 208, 208);
-}
 
 #cotedroit {
     display:wrap;
     flex: 1;
     min-height: 400px;
     border:2px solid black;
--moz-border-radius:7px;
--webkit-border-radius:7px;
-border:2px solid black;
--moz-border-radius:7px;
--webkit-border-radius:7px;
-border-radius:7px;
-}
+    -moz-border-radius:7px;
+    -webkit-border-radius:7px;
+    border-radius:7px;
+        margin: 1em;
+        background-color: rgb(250, 250, 250);
+        box-shadow: 5px 5px 5px rgb(226, 208, 208);
+    }
+
 
 h1 {
     color: #6D2878;
