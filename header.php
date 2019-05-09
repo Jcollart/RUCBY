@@ -23,5 +23,5 @@
       <a href="galerie.php">galerie</a>
       <a href="contact.php">contact</a>
     </div>
-</nav>
+  </nav>
 </header>
