@@ -32,7 +32,7 @@
     <!--- ARTICLE NEWS --->
     <article id=news>
 
-        <div id=image_article><img src="images/futsal.jpg.jpg"></div>
+        <div id=image_article><img src="images/futsal.jpg"></div>
         <div id=contenu_article>
             <h1>Titre article</h1>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, sapiente. Blanditiis, numquam
@@ -63,7 +63,7 @@
 
           </p>
       </div>
-      <div id=image_article><img src="images/futsal.jpg.jpg"></div>
+      <div id=image_article><img src="images/futsal.jpg"></div>
 
   </article>
 
