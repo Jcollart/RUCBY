@@ -13,59 +13,68 @@
     <?php include('header.php'); ?>
 
     <!--HEADER NEWS-->
+    <?php
+  try
+  {
+    // On se connecte à MySQL
+    $bdd = new PDO('mysql:host=localhost;dbname=futsal;charset=UTF8', 'root', '');
+    
+  }
+  catch(Exception $e)
+  {
+    // En cas d'erreur, on affiche un message et on arrête tout
+          die('Erreur : '.$e->getMessage());
+  }
+  ?>
 
     <div id="header_news">
         <div id="cadre_titre">
             <h1>LES NEWS</h1>
         </div>
     </div>
+    
 
 
     <!---TEXTE PRESENTATION DE LA RUBRIQUE NEWS ---->
-
+    
     <div id=conteneur_texte>
         <p>Lorem ipsum dolordrt sit amet consectetur adipisicing elit. Illo ipsa, quas expedita sint, impedit ex earum
             consequatur repudianda nesciunt labore dolore quo suscipit reiciendis, rem debitis sed atque! Quas, et!
         </p>
     </div>
+    <?php
 
+$requete = $bdd->query ("SELECT * FROM appartenir, news, image where news.id_news = appartenir.id_news AND image.id_image = appartenir.id_image ");
+ 
+ 
+while  ($resultat = $requete->fetch())
+{
+
+
+?>
+
+ 
     <!--- ARTICLE NEWS --->
     <article id=news>
 
-        <div id=image_article><img src="images/futsal.jpg"></div>
+   
+
+        <div id=image_article><img src="images/<?php echo $resultat['nom_image']; ?>"></div>
         <div id=contenu_article>
-            <h1>Titre article</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, sapiente. Blanditiis, numquam
-                cupiditate! Magnam inventore
-                praesentium quibusdam. Voluptatum tempore suscipit cumque doloremque deserunt possimus vero nesciunt
-                incidunt voluptates rem. Veritatis?<br>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum repudiandae exercitationem veniam non?
-                Vitae itaque doloremque, sunt sint nam sapiente optio, facilis dolorem ab quam aliquid id explicabo
-                earum non.
+            <h1><?php echo $resultat['titre_news']; ?></h1>
+            <p><?php echo $resultat['description_news']; ?>
 
             </p>
         </div>
-
+      
       </article>
+      <?php
+  }
+ 
+$requete->closeCursor(); // Termine le traitement de la requête
 
-  <article id=news>
-
-
-      <div id=contenu_article>
-          <h1>Titre article</h1>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, sapiente. Blanditiis, numquam
-              cupiditate! Magnam inventore
-              praesentium quibusdam. Voluptatum tempore suscipit cumque doloremque deserunt possimus vero nesciunt
-              incidunt voluptates rem. Veritatis?<br>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum repudiandae exercitationem veniam non?
-              Vitae itaque doloremque, sunt sint nam sapiente optio, facilis dolorem ab quam aliquid id explicabo
-              earum non.
-
-          </p>
-      </div>
-      <div id=image_article><img src="images/futsal.jpg"></div>
-
-  </article>
+?>
+  
 
 
 
