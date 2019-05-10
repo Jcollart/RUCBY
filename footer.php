@@ -23,7 +23,7 @@
 
        <div class="col-md-4 col-sm-4">
        <div class="footer-info-single">
-       	<h2 class="title">Photos</h2>
+       	<h2 class="title">Les Photos</h2>
        	<ul class="list-unstyled">
           <li><a href="Rubphoto.php" title="">Rubrique-Photo</a></li>
        		<li><a href="galerie.php" title="">Galerie</a></li>

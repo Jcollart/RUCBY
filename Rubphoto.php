@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <?php include('header.php');?>
+  <?php include('header2.php');?>
   <div id="bloc_rubphotos">
     <div id="cadre_titre">
       <h1>RUBRIQUE PHOTOS </h1>
