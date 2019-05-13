@@ -44,7 +44,7 @@
     </div>
     <?php
 
-$requete = $bdd->query ("SELECT * FROM appartenir, news, image where news.id_news = appartenir.id_news AND image.id_image = appartenir.id_image limit 1 ");
+$requete = $bdd->query ("SELECT *  FROM appartenir, news, image where news.id_news = appartenir.id_news AND image.id_image = appartenir.id_image ");
  
  
 while  ($resultat = $requete->fetch())
@@ -62,9 +62,7 @@ while  ($resultat = $requete->fetch())
         <div id=image_article><img src="images/<?php echo $resultat['nom_image']; ?>"></div>
         <div id=contenu_article>
             <h1><?php echo $resultat['titre_news']; ?></h1>
-            <p><?php echo $resultat['description_news']; ?>
-
-            </p>
+            <p><?php echo $resultat['description_news']; ?></p>
         </div>
       
       </article>
