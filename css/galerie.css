@@ -28,6 +28,7 @@
 
 li {
     list-style-type: none;
+    margin: 0.1% 0.1%;
 }
 
 .ligne1, .ligne2, .ligne3 {
@@ -44,6 +45,11 @@ li {
 
 }
 
+.photol1 img:hover, .photol2 img:hover, .photol3 img:hover {
+  transition: 400ms;
+  transform: scale(1.08);
+}
+
 .ligne1 img, .ligne2 img, .ligne3 img {
     margin-right : em;
 }
@@ -52,18 +58,17 @@ ul#photol1, ul#photol2, ul#photol3 {
     max-width: 100%;
     height: auto;
     display: flex;
-    justify-content: space-around;
-    margin: 3% 0;
+    justify-content: center;
 }
 
 .galerie img{
-  border: 5px solid #6D2878;
-  border-radius: 15%;
+  border: x soid #6D878;
 }
 
 .galerie {
   animation-duration: 1s;
   animation-name: slidein;
+  margin: 3%;
 }
 
 @keyframes slidein {
