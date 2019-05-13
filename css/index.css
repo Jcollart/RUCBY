@@ -4,7 +4,7 @@ html{
 
 body{
     position: relative;
-    background-color: white;
+    background-color: hite;
     min-height: 100%;
     margin: 0;
     padding: 0;
@@ -26,23 +26,70 @@ h2  {
 /*************/
 
 .presentation {
-    margin: 1% 10%;
-    border: 1px solid black;
-    background-color: rgb(250, 250, 246);
-    box-shadow: 5px 5px 5px rgb(226, 208, 208);
+  margin: 2% 15%;
+  display: flex;
+  background-color: rgb(250, 250, 246);
+  box-shadow: 5px 5px 5px rgb(226, 208, 208);
 }
 
+.pTexte{
+  margin: 0 10%;
+  text-align: justify;
+}
 
+.pImg{
+  margin: 1%;
+}
+
+@media (max-width:1400px) {
+
+.presentation{
+  display: block;
+}
+
+.pImg{
+  text-align: center;
+}
+
+}
 
 /*************/
 /** PARRALAX**/
 /*************/
 
 .parallax-window {
-    min-height: 35%;
-    background: transparet;
+    min-height: 35em;
+    background: trasparent;
 }
 
 /*************/
 /** A PROPOS**/
 /*************/
+
+.aPropos {
+  margin: 2% 15%;
+  display: flex;
+  background-color: rgb(250, 250, 246);
+  box-shadow: 5px 5px 5px rgb(226, 208, 208);
+}
+
+.aPtexte{
+  margin: 0 10%;
+  text-align: justify;
+}
+
+.aPimg{
+  margin: 1%;
+}
+
+@media (max-width:1400px) {
+
+.aPropos {
+  display: block;
+}
+
+.aPimg{
+  text-align: center;
+}
+
+}

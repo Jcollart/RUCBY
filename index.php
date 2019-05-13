@@ -6,8 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/index.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
   <title>Accueil</title>
@@ -44,8 +43,9 @@
 
 	<div class="presentation">
 		<div class="pImg">
-			<img src="images/logo_villers.png" alt="Président">
-		</div>
+		<img src="images/logo_villers.png" alt="Président">
+	</div>
+
 		<div class="pTexte">
 			<h2>Un mot du président</h2><br>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
@@ -58,7 +58,7 @@
 				pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
 				laborum.</p>
 		</div>
-	</div>
+</div>
 	<!--FIN MOT DU PRESIDENT-->
 
 	<!--PARRALAX-->
@@ -68,9 +68,6 @@
 
 	<!--A PROPOS-->
 	<div class="aPropos">
-		<div class="aPimg">
-			<img src="images/apropos.jpg" alt="">
-		</div>
 		<div class="aPtexte">
 			<h2>A Propos</h2><br>
 			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis illum error, molestias soluta numquam possimus,
@@ -81,10 +78,17 @@
 				itaque ut eum explicabo officiis rerum sed mollitia. Repudiandae commodi quaerat, corporis expedita nostrum ab
 				architecto sit impedit optio.</p>
 		</div>
+		<div class="aPimg">
+			<img src="images/apropos.jpg" alt="" width="400px">
+		</div>
 	</div>
+
 	<!--FIN A PROPOS-->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
 <?php include('footer.php'); ?>
 
-</body>
+	</body>
 
 </html>
