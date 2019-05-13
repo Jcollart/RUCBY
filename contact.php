@@ -31,15 +31,8 @@
             <h1>CONTACT</h1>
         </div>
     </div>
-    <!---FIN <div id="header_contact"> --->
-
-
 
     <!--FORMULAIRE CONTACT-->
-
-
-
-
 
     <form method="post" action="traitement_formulaire.php">
         <!--CONTENEUR FORMULAIRE-->
@@ -59,7 +52,6 @@
             </div>
             <!--FIN FORMULAIRE PARTIE GAUCHE-->
 
-
             <!--FORMULAIRE PARTIE DROITE-->
             <div  id="element-form2">
 
@@ -68,8 +60,6 @@
 
             </div>
             <!--FIN FORMULAIRE PARTIE DROITE-->
-
-
         </div>
         <!--FIN CONTENEUR FORMULAIRE-->
 
@@ -77,13 +67,11 @@
         <div  id=bouton-form>
             <input type="submit" value="Envoyer" />
         </div>
-
     </form>
 
     <!--PARRALAX-->
     <div class="parallax-window" data-parallax="scroll" data-image-src="images/sport1.jpg" alt=""></div>
     <!--FIN PARRALAX-->
-
 
     <!--MAP-->
 
