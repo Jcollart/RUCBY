@@ -10,20 +10,12 @@
 </head>
 
 <body>
-    <?php include('header2.php'); ?>
-    <?php
-  try
-  {
-    // On se connecte à MySQL
-    $bdd = new PDO('mysql:host=localhost;dbname=futsal;charset=UTF8', 'root', '');
+<?php include('php/connectbdd.php');// connexion BDD //
+  
+  include('header2.php'); ?>
+  
 
-  }
-  catch(Exception $e)
-  {
-    // En cas d'erreur, on affiche un message et on arrête tout
-          die('Erreur : '.$e->getMessage());
-  }
-  ?>
+<!--HEADER NEWS-->
   <?php
 // Vérifie si le formulaire a été envoyé
 if (isset($_POST["envoyer"])) {
