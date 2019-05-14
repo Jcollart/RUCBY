@@ -44,7 +44,7 @@
     </div>
     <?php
 
-$requete = $bdd->query ("SELECT *  FROM appartenir, news, image where news.id_news = appartenir.id_news AND image.id_image = appartenir.id_image ");
+$requete = $bdd->query ("SELECT *  FROM appartenir, news, image where news.id_news = appartenir.id_news AND image.id_image = appartenir.id_image limit 2");
  
  
 while  ($resultat = $requete->fetch())

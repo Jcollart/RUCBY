@@ -11,7 +11,19 @@
 
 <body>
     <?php include('header2.php'); ?>
+    <?php
+  try
+  {
+    // On se connecte à MySQL
+    $bdd = new PDO('mysql:host=localhost;dbname=futsal;charset=UTF8', 'root', '');
 
+  }
+  catch(Exception $e)
+  {
+    // En cas d'erreur, on affiche un message et on arrête tout
+          die('Erreur : '.$e->getMessage());
+  }
+  ?>
     <!--HEADER CONTACT-->
 
     <div id="header_contact">
@@ -19,15 +31,8 @@
             <h1>CONTACT</h1>
         </div>
     </div>
-    <!---FIN <div id="header_contact"> --->
-
-
 
     <!--FORMULAIRE CONTACT-->
-
-
-
-
 
     <form method="post" action="traitement_formulaire.php">
         <!--CONTENEUR FORMULAIRE-->
@@ -47,7 +52,6 @@
             </div>
             <!--FIN FORMULAIRE PARTIE GAUCHE-->
 
-
             <!--FORMULAIRE PARTIE DROITE-->
             <div  id="element-form2">
 
@@ -56,8 +60,6 @@
 
             </div>
             <!--FIN FORMULAIRE PARTIE DROITE-->
-
-
         </div>
         <!--FIN CONTENEUR FORMULAIRE-->
 
@@ -65,13 +67,11 @@
         <div  id=bouton-form>
             <input type="submit" value="Envoyer" />
         </div>
-
     </form>
 
     <!--PARRALAX-->
     <div class="parallax-window" data-parallax="scroll" data-image-src="images/sport1.jpg" alt=""></div>
     <!--FIN PARRALAX-->
-
 
     <!--MAP-->
 
