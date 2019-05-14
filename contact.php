@@ -24,6 +24,20 @@
           die('Erreur : '.$e->getMessage());
   }
   ?>
+  <?php
+// Vérifie si le formulaire a été envoyé
+if (isset($_POST["envoyer"])) {
+    // Si un champ est vide, on affiche une erreur
+    if ($_POST["nom"] == "" || $_POST["prenom"] == "" || $_POST["mail"] == "" || $_POST["sujet"] == "" || $_POST["message"] == "" ) {
+       echo "Erreur";
+    }
+    else { // Sinon, si tout est bon ça fonctionnera
+      $rescontact = $bdd->prepare("INSERT INTO contact (nom, prenom, mail, sujet, message) VALUES (?, ?, ?, ?, ?)");
+      $rescontact->execute(array($_POST["nom"], $_POST["prenom"], $_POST["mail"], $_POST["sujet"], $_POST["message"]));
+      echo "Envoyé";
+    }
+}
+?>
     <!--HEADER CONTACT-->
 
     <div id="header_contact">
@@ -34,7 +48,7 @@
 
     <!--FORMULAIRE CONTACT-->
 
-    <form method="post" action="traitement_formulaire.php">
+    <form method="post">
         <!--CONTENEUR FORMULAIRE-->
         <div  id="conteneur-form">
             <!--FORMULAIRE PARTIE GAUCHE-->
@@ -45,7 +59,7 @@
                 <br />
                 <input type="text" name="prenom" id="prenom" placeholder="Prénom" size="40" maxlength="20" />
                 <br />
-                <input type="email" name="email" id="email" placeholder="Email" size="40" maxlength="20" />
+                <input type="email" name="mail" id="email" placeholder="Email" size="40" maxlength="120" />
                 <br />
                 <input type="text" name="sujet" id="sujet" placeholder="Sujet" size="40" maxlength="20" />
 
@@ -65,7 +79,7 @@
 
         <!--BOUTON ENVOYER-->
         <div  id=bouton-form>
-            <input type="submit" value="Envoyer" />
+            <input type="submit" name="envoyer" value="Envoyer" />
         </div>
     </form>
 
