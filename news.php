@@ -2,47 +2,38 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/news.css">
-    <title>Les News</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/news.css">
+  <title>Les News</title>
 </head>
 
 <body>
-    <?php include('header2.php'); ?>
+  <?php include('php/connectbdd.php');// connexion BDD //
+  
+  include('header2.php'); ?>
+  
 
-    <!--HEADER NEWS-->
-    <?php
-  try
-  {
-    // On se connecte à MySQL
-    $bdd = new PDO('mysql:host=localhost;dbname=futsal;charset=UTF8', 'root', '');
-    
-  }
-  catch(Exception $e)
-  {
-    // En cas d'erreur, on affiche un message et on arrête tout
-          die('Erreur : '.$e->getMessage());
-  }
-  ?>
+<!--HEADER NEWS-->
 
-    <div id="header_news">
-        <div id="cadre_titre">
-            <h1>LES NEWS</h1>
-        </div>
+
+  <div id="header_news">
+    <div id="cadre_titre">
+      <h1>LES NEWS</h1>
     </div>
-    
+  </div>
 
 
-    <!---TEXTE PRESENTATION DE LA RUBRIQUE NEWS ---->
-    
-    <div id=conteneur_texte>
-        <p>Lorem ipsum dolordrt sit amet consectetur adipisicing elit. Illo ipsa, quas expedita sint, impedit ex earum
-            consequatur repudianda nesciunt labore dolore quo suscipit reiciendis, rem debitis sed atque! Quas, et!
-        </p>
-    </div>
-    <?php
+
+  <!---TEXTE PRESENTATION DE LA RUBRIQUE NEWS ---->
+
+  <div id=conteneur_texte>
+    <p>Lorem ipsum dolordrt sit amet consectetur adipisicing elit. Illo ipsa, quas expedita sint, impedit ex earum
+      consequatur repudianda nesciunt labore dolore quo suscipit reiciendis, rem debitis sed atque! Quas, et!
+    </p>
+  </div>
+  <?php
 
 $requete = $bdd->query ("SELECT *  FROM appartenir, news, image where news.id_news = appartenir.id_news AND image.id_image = appartenir.id_image limit 2");
  
@@ -53,12 +44,13 @@ while  ($resultat = $requete->fetch())
 
 ?>
 
- 
-    <!--- ARTICLE NEWS --->
-    <article id=news>
 
-   
+  <!--- ARTICLE NEWS --->
+  <article id=news>
 
+
+
+<<<<<<< HEAD
         <div id=image_article><img src="images/<?php echo $resultat['nom_image']; ?>"></div>
         <div id=contenu_article>
             <h1><?php echo $resultat['titre_news']; ?></h1>
@@ -67,12 +59,24 @@ while  ($resultat = $requete->fetch())
       
       </article>
       <?php
+=======
+    <div id=image_article><img src="images/<?php echo $resultat['nom_image']; ?>"></div>
+    <div id=contenu_article>
+      <h1><?php echo $resultat['titre_news']; ?></h1>
+      <p><?php echo $resultat['description_news']; ?>
+
+      </p>
+    </div>
+
+  </article>
+  <?php
+>>>>>>> f016032d2fe5e151b7e221ff85b7dd1c1ad562a2
   }
  
 $requete->closeCursor(); // Termine le traitement de la requête
 
 ?>
-  
+
 
 
 
