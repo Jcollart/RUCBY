@@ -50,7 +50,6 @@ while  ($resultat = $requete->fetch())
 
 
 
-<<<<<<< HEAD
         <div id=image_article><img src="images/<?php echo $resultat['nom_image']; ?>"></div>
         <div id=contenu_article>
             <h1><?php echo $resultat['titre_news']; ?></h1>
@@ -59,18 +58,6 @@ while  ($resultat = $requete->fetch())
       
       </article>
       <?php
-=======
-    <div id=image_article><img src="images/<?php echo $resultat['nom_image']; ?>"></div>
-    <div id=contenu_article>
-      <h1><?php echo $resultat['titre_news']; ?></h1>
-      <p><?php echo $resultat['description_news']; ?>
-
-      </p>
-    </div>
-
-  </article>
-  <?php
->>>>>>> f016032d2fe5e151b7e221ff85b7dd1c1ad562a2
   }
  
 $requete->closeCursor(); // Termine le traitement de la requête

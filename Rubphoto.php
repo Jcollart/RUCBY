@@ -20,15 +20,9 @@
 
   <div id="choix_rubphoto">
 
-<<<<<<< HEAD
     <div id="cotegauche"><a href="galerie.php"><h1>RUBRIQUE TOURNOI</h1><img  src="images/mondial2019.jpg" width="350px" height="300px" alt=""></a></div>
     <div id="cotemilieu"><a href="galerie.php"><h1>RUBRIQUE MATCH</h1><img  src="images/futsal.jpg" width="350px" height="300px" alt=""></a></div>
     <div id="cotedroit"><a href="galerie.php"><h1>RUBRIQUE SOIREE</h1><img  src="images/soireefutsal.jpg" width="350px" height="300px" alt=""></a></div>
-=======
-    <div id="cotegauche"><a href="galerie.php?id=1"><h1>RUBRIQUE TOURNOI</h1><img  src="images/mondial2019.jpg" width="500px" height="400px" alt=""></a></div>
-    <div id="cotemilieu"><a href="galerie.php?id=2"><h1>RUBRIQUE MATCH</h1><img  src="images/futsal.jpg" width="500px" height="450px" alt=""></a></div>
-    <div id="cotedroit"><a href="galerie.php?id=3"><h1>RUBRIQUE SOIREE</h1><img  src="images/soireefutsal.jpg" width="500px" height="400px" alt=""></a></div>
->>>>>>> f016032d2fe5e151b7e221ff85b7dd1c1ad562a2
 
   </div>
 
