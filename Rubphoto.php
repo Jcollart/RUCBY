@@ -8,6 +8,8 @@
 
   <link rel="stylesheet" href="css/rubphotos.css">
   <title>rubrique photo</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
 </head>
 
 <body>
