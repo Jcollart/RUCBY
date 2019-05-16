@@ -19,7 +19,6 @@
     <a href="rank.php">classement</a>
     <a href="news.php">nouveautés</a>
     <a href="Rubphoto.php">rubrique-photo</a>
-    <a href="galerie.php">galerie</a>
     <a href="contact.php">contact</a>
   </div>
 </nav>
