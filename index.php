@@ -23,21 +23,18 @@
     <div class="carousel-item active">
       <img src="images/sport1.jpg" class="d-block w-100" alt="...">
 			<div class="carousel-caption d-none d-md-block">
-          <h5>1 slide label</h5>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </div>
     </div>
     <div class="carousel-item">
       <img src="images/sport2.jpg" class="d-block w-100" alt="...">
 			<div class="carousel-caption d-none d-md-block">
-          <h5>2 slide label</h5>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </div>
     </div>
     <div class="carousel-item">
       <img src="images/sport3.jpg" class="d-block w-100" alt="...">
 			<div class="carousel-caption d-none d-md-block">
-          <h5>3 slide label</h5>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </div>
     </div>
