@@ -12,6 +12,8 @@
 
 <body>
   <?php include('header2.php');?>
+  <?php include('php/connectbdd.php'); ?>
+
   <div id="bloc_rubphotos">
     <div id="cadre_titre">
       <h1>RUBRIQUE PHOTOS </h1>

@@ -2,7 +2,7 @@
   try
   {
     // On se connecte à MySQL
-    $bdd = new PDO('mysql:host=localhost;dbname=futsal1;charset=UTF8', 'root', '');
+    $bdd = new PDO('mysql:host=localhost;dbname=futsal;charset=UTF8', 'root', '');
 
   }
   catch(Exception $e)
