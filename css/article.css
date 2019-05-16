@@ -89,12 +89,26 @@ body {
 }
 
 .boutons_partage{
-    text-align: center;
     margin-bottom: 30px;
+    display: block;
+    justify-items: center; /* GNNEEEEEEEUU ça veut pas se centrer !!!!!! */
+}
+
+#partage_fb{
+display: inline-block;
+}
+
+#partage_tw{
+display: inline-block;
+
 }
 
 .fa-facebook-square {
-    color:#6D2878 
+    color:#6D2878
+}
+
+.fa-twitter-square {
+    color:#6D2878
 }
 
 
