@@ -20,7 +20,27 @@
 
 	<div id="bloc_galerie">
 		<div id="cadre_titre">
-			<h1>GALERIE PHOTO</h1>
+
+			<?php
+
+	      $id = $_GET['id'];
+	      $req = "SELECT * FROM galerie WHERE id_galerie=$id ";
+	      $reponse = $bdd->query($req);
+	      $reponse->execute();
+
+	      while ($donnees = $reponse->fetch())
+	        {
+	          ?>
+
+						<h1>GALERIE PHOTOS <?php echo $donnees['nom_galerie']; ?></h1>
+
+	          <?php
+	          }
+
+	          $reponse->closeCursor(); // Termine le traitement de la requête
+
+	          ?>
+
 		</div>
 	</div>
 
