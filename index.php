@@ -93,7 +93,7 @@
 				architecto sit impedit optio.</p>
 		</div>
 		<div class="aPimg">
-			<img src="images/apropos.jpg" alt="" width="400px">
+			<img src="images/apropos.jpg" alt="futsal">
 		</div>
 	</div>
 
