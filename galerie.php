@@ -29,8 +29,8 @@
 				<?php
 
 
-
-         $req = "SELECT * FROM photo";
+				 $id = $_GET['id'];
+         $req = "SELECT * FROM photo,correspond,galerie WHERE galerie.id_galerie=$id AND photo.id_photo = correspond.id_photo AND galerie.id_galerie = correspond.id_galerie ORDER BY photo.id_photo DESC";
          $reponse = $bdd->query($req);
 
       // On affiche chaque entrée une à une
