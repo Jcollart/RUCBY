@@ -91,17 +91,13 @@ body {
 .boutons_partage{
     margin-bottom: 30px;
     display: block;
-    justify-items: center; /* GNNEEEEEEEUU ça veut pas se centrer !!!!!! */
+    text-align: center; /* GNNEEEEEEEUU ça veut pas se centrer !!!!!! */
 }
 
-#partage_fb{
-display: inline-block;
-}
-
-#partage_tw{
-display: inline-block;
+#icones_partage{
 
 }
+
 
 .fa-facebook-square {
     color:#6D2878
