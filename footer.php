@@ -26,7 +26,6 @@
        	<h2 class="title">Les Photos</h2>
        	<ul class="list-unstyled">
           <li><a href="Rubphoto.php" title="">Rubrique-Photo</a></li>
-       		<li><a href="galerie.php" title="">Galerie</a></li>
        	</ul>
        </div>
        </div>
