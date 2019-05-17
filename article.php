@@ -44,22 +44,14 @@ while  ($resultat = $requete->fetch())
   </div>
 
 
-  <!-- ARTICLE -->
-
-
 
   <!--- ARTICLE --->
-  <article id=news>
+  <article id=contenu_article>
 
 
+    <p><?php echo $resultat['description_news']; ?>
 
-
-    <div id=contenu_article>
-
-      <p><?php echo $resultat['description_news']; ?>
-
-      </p>
-    </div>
+    </p>
 
   </article>
   <?php
@@ -70,14 +62,14 @@ $requete->closeCursor(); // Termine le traitement de la requête
 ?>
 
   <div class="boutons_partage">
-    <div id="icones_partage"><a class="faa-parent animated-hover"
+    <div id="icones_partage"><a class="faa-parent animated-hover"    
         href="https://www.facebook.com/sharer.php?u=<?= $lien ?>&t=<?= $titre ?>"
         onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=500,width=700');return false;">
-        <i class="fab fa-facebook-square fa-5x faa-shake"></i>
+        <i class="fab fa-facebook-square fa-4x faa-shake"></i>
       </a>
       <a class="faa-parent animated-hover" href="https://twitter.com/share?url=<?= $titre ?>&via=votre-nom-twitter"
         onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=500,width=700');return false;">
-        <i class="fab fa-twitter-square fa-5x faa-shake"></i>
+        <i class="fab fa-twitter-square fa-4x faa-shake"></i>
       </a>
     </div>
   </div>
