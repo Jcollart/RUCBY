@@ -50,7 +50,7 @@ while  ($resultat = $requete->fetch())
 
 
 
-        <div id=image_article><img src="images/<?php echo $resultat['nom_image']; ?>"></div>
+        <div id=image_article><img src="images/<?php echo $resultat['nom_image']; ?>" ></div>
         <div id=contenu_article>
             <h1><?php echo $resultat['titre_news']; ?></h1>
             <p><?php echo $resultat['description_news']; ?>...</p>
