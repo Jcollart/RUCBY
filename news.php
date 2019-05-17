@@ -35,8 +35,8 @@
   </div>
   <?php
 
-$requete = $bdd->query ("SELECT nom_image, titre_news, SUBSTRING(description_news, 1, 300) as description_news  FROM appartenir, news, image where news.id_news = appartenir.id_news AND image.id_image = appartenir.id_image ORDER BY RAND()   limit 0, 3");
-
+$requete = $bdd->prepare ("SELECT nom_image, titre_news, SUBSTRING(description_news, 1, 300) as description_news  FROM appartenir, news, image WHERE news.id_news = appartenir.id_news AND image.id_image = appartenir.id_image ORDER BY image.id_image DESC limit 0, 3");
+$requete->execute();
  
 while  ($resultat = $requete->fetch())
 {
