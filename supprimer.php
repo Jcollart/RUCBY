@@ -13,10 +13,10 @@ catch(Exception $e)
 
 // Si tout va bien, on peut continuer
 if(isset($_GET['id_news']) AND !empty($_GET['id_news'])) {
-   $suppr_id = htmlspecialchars($_GET['id_news']);
-   $suppr = $bdd->prepare('DELETE id_news FROM news WHERE id_news = ?');
-   $suppr->execute(array($suppr_id));
-   header('Location:http://127.0.0.1/html/rucby/article.php?id_news='.$edit_id);
-   $message = 'Votre article a bien été effacé !';
-}
-?>
+    $suppr_id = htmlspecialchars($_GET['id_news']);
+    $suppr = $bdd->prepare('DELETE * FROM news, appartenir WHERE id_news = ?');
+    $suppr->execute(array($suppr_id));
+    header('Location: http://127.0.0.1/html/rucby/');
+ }
+  echo ' la news est supprimée';
+ ?>

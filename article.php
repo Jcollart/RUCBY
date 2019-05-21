@@ -30,7 +30,7 @@
 
   <div id="header_article" <?php
 
-$requete = $bdd->query ("SELECT * FROM appartenir, news, image WHERE news.id_news = appartenir.id_news AND image.id_image = appartenir.id_image");
+$requete = $bdd->query ("SELECT * FROM appartenir, news, image WHERE news.id_news = appartenir.id_news AND image.id_image = appartenir.id_image LIMIT 1");
  
  
 while  ($resultat = $requete->fetch())
@@ -60,8 +60,8 @@ while  ($resultat = $requete->fetch())
 $requete->closeCursor(); // Termine le traitement de la requête
 
 ?>
-
-  <div class="boutons_partage">
+<!--
+ <div class="boutons_partage">
     <div id="icones_partage"><a class="faa-parent animated-hover"    
         href="https://www.facebook.com/sharer.php?u=<?= $lien ?>&t=<?= $titre ?>"
         onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=500,width=700');return false;">
@@ -73,7 +73,7 @@ $requete->closeCursor(); // Termine le traitement de la requête
       </a>
     </div>
   </div>
-
+-->
 
   <?php include('footer.php'); ?>
 
