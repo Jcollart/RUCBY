@@ -30,7 +30,7 @@
 
   <div id="header_article" <?php
 
-$requete = $bdd->query ("SELECT * FROM appartenir, news, image WHERE news.id_news = appartenir.id_news AND image.id_image = appartenir.id_image limit 1 ");
+$requete = $bdd->query ("SELECT * FROM appartenir, news, image WHERE news.id_news = appartenir.id_news AND image.id_image = appartenir.id_image");
  
  
 while  ($resultat = $requete->fetch())
