@@ -32,12 +32,12 @@ if(isset($_POST['titre_news'], $_POST['description_news'])) {
       if($mode_edition == 0) {
          $ins = $bdd->prepare('INSERT INTO news (titre_news, description_news, date_news) VALUES (?, ?, NOW())');
          $ins->execute(array($article_titre, $article_contenu));
-         header('Location: http://127.0.0.1/html/rucby/article.php?id_news='.$edit_id);
+         header('Location: http://127.0.0.1/html/rucby/article.php?id_news='.$_GET['id_news']);
          $message = 'Votre article a bien été posté';
       } else {
          $update = $bdd->prepare('UPDATE news SET titre_news = ?,description_news = ?, date_news = NOW() WHERE id_news = ?');
          $update->execute(array($article_titre, $article_contenu, $edit_id));
-         header('Location: http://127.0.0.1/html/rucby/article.php?id_news='.$edit_id);
+         header('Location: http://127.0.0.1/html/rucby/news.php');
          $message = 'Votre article a bien été mis à jour !';
       }
    } else {
@@ -53,11 +53,11 @@ if(isset($_POST['titre_news'], $_POST['description_news'])) {
 </head>
 <body>
    <form method="POST">
-      <input type="text" name="titre_news" placeholder="Titre"<?php if($mode_edition == 1) { ?> value="<?= 
+      <center><input type="text" name="titre_news" placeholder="Titre"<?php if($mode_edition == 1) { ?> value="<?= 
       $edit_article['titre_news'] ?>"<?php } ?> /><br />
       <textarea name="description_news" placeholder="Contenu de l'article"><?php if($mode_edition == 1) { ?><?= 
       $edit_article['description_news'] ?><?php } ?></textarea><br />
-      <input type="submit" value="Envoyer l'article" />
+      <input type="submit" value="Envoyer l'article" /></center>
    </form>
    <br />
    <?php if(isset($message)) { echo $message; } ?>

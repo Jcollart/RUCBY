@@ -24,7 +24,7 @@
     </div>
   </div>
 
-
+ 
 
   <!---TEXTE PRESENTATION DE LA RUBRIQUE NEWS ---->
 
@@ -33,40 +33,42 @@
       consequatur repudianda nesciunt labore dolore quo suscipit reiciendis, rem debitis sed atque! Quas, et!
     </p>
   </div>
-  <?php
 
-$requete = $bdd->prepare ("SELECT nom_image, titre_news, SUBSTRING(description_news, 1, 300) as description_news FROM appartenir, news, image WHERE news.id_news = appartenir.id_news AND image.id_image = appartenir.id_image AND news.id_news=image.id_image ORDER BY news.date_news DESC limit 0, 3");
+
+  <!--- ARTICLE NEWS --->
+  <article id=news>
+  <?php
+  
+$requete = $bdd->prepare  ("SELECT nom_image, titre_news, SUBSTRING(description_news, 1, 300) as description_news FROM appartenir, news, image WHERE news.id_news = appartenir.id_news AND image.id_image = appartenir.id_image AND news.id_news=image.id_image ORDER BY news.date_news DESC limit 0, 3");
 $requete->execute();
  
-while  ($resultat = $requete->fetch())
+while  ($donnees = $requete->fetch())
 {
 
 
 ?>
 
 
-  <!--- ARTICLE NEWS --->
-  <article id=news>
 
-
-
-        <div id=image_article><a href="article.php?id_news=<?php echo $resultat['id_news'];?>"><img src="images/<?php echo $resultat['nom_image']; ?>" ></a></div>
+        <div id=image_article><a href="article.php?id_news=<?php echo $donnees['$id'];?>"><img src="images/<?php echo $donnees['nom_image']; ?>" ></a></div>
         <div id=contenu_article>
-            <h1><?php echo $resultat['titre_news']; ?></h1>
-            <p><?php echo $resultat['description_news']; ?>...</p>
+            <h1><?php echo $donnees['titre_news']; ?></h1>
+
+            
+            <p><?php echo $donnees['description_news']; ?>...</p>
         </div>
       
-
-      
-
-      </article>
-      <?php
+        <?php
   }
  
 $requete->closeCursor(); // Termine le traitement de la requête
 
 ?>
+      
 
+      </article>
+      
+     
 
 
 
