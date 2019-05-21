@@ -35,7 +35,7 @@
   </div>
   <?php
 
-$requete = $bdd->prepare ("SELECT nom_image, titre_news, SUBSTRING(description_news, 1, 300) as description_news  FROM appartenir, news, image WHERE news.id_news = appartenir.id_news AND image.id_image = appartenir.id_image ORDER BY image.id_image DESC limit 0, 3");
+$requete = $bdd->prepare ("SELECT nom_image, titre_news, SUBSTRING(description_news, 1, 300) as description_news FROM appartenir, news, image WHERE news.id_news = appartenir.id_news AND image.id_image = appartenir.id_image AND news.id_news=image.id_image ORDER BY news.date_news DESC limit 0, 3");
 $requete->execute();
  
 while  ($resultat = $requete->fetch())
@@ -50,7 +50,7 @@ while  ($resultat = $requete->fetch())
 
 
 
-        <div id=image_article><img src="images/<?php echo $resultat['nom_image']; ?>" ></div>
+        <div id=image_article><a href="article.php?id_news=<?php echo $resultat['id_news'];?>"><img src="images/<?php echo $resultat['nom_image']; ?>" ></a></div>
         <div id=contenu_article>
             <h1><?php echo $resultat['titre_news']; ?></h1>
             <p><?php echo $resultat['description_news']; ?>...</p>
