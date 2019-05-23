@@ -32,7 +32,7 @@ if(isset($_POST['titre_news'], $_POST['description_news'])) {
       if($mode_edition == 0) {
          $ins = $bdd->prepare('INSERT INTO news (titre_news, description_news, date_news) VALUES (?, ?, NOW())');
          $ins->execute(array($article_titre, $article_contenu));
-         header('Location: http://127.0.0.1/html/rucby/article.php?id_news='.$_GET['id_news']);
+         header('Location: http://127.0.0.1/html/rucby/news.php?id_news='.$_GET['id_news']);
          $message = 'Votre article a bien été posté';
       } else {
          $update = $bdd->prepare('UPDATE news SET titre_news = ?,description_news = ?, date_news = NOW() WHERE id_news = ?');

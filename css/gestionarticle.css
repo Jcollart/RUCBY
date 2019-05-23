@@ -1,0 +1,64 @@
+.tableau{
+    animation-duration: 2s;
+    animation-name: slidein;
+    margin: 4% 0;
+  }
+
+.tableau th{
+    background-color: #6D2878;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    font-size: 2em;
+    color: white;
+  }
+  
+.tableau td{
+    background-color: #b653c6;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.7em;
+    color: white;
+  
+  }
+  
+.tableau table{
+    border-collapse: collapse;
+    width: 60%;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  p{
+    font-family: Arial,sans-serif;
+    font-size: 1.6em;
+    width: 200px;
+    height: 43px;
+    padding-top: 7px; /*permet le centrage vertical*/
+    text-align: center;
+    color: #000;
+    background: #666;
+    background: linear-gradient( #666, #2C2C2C);
+    border-radius: 8px;
+}
+
+
+#titre{
+    text-align: center;
+    font-size: 1.7em;
+}  
+
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
