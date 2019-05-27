@@ -2,7 +2,7 @@
 try
 {
   // On se connecte à MySQL
-  $bdd = new PDO('mysql:host=localhost;dbname=futsal;charset=UTF8', 'root', '');
+  $bdd = new PDO('mysql:host=localhost;dbname=futsal;charset=UTF8', 'commun', 'commun');
   
 }
 catch(Exception $e)
@@ -35,13 +35,14 @@ $articles = $bdd->query('SELECT * FROM news ORDER BY id_news DESC');
    <div class="tableau">
         <center><table>
           <tr>
-            <th width=35%">Titre News</th>
+            <th width="35%">Titre News</th>
             <th width="35%">Modification News</th>
             <th width="35%">Suppression News</th>
           </tr>
           <tr>
           
           <?php while($a = $articles->fetch()) { ?>
+
           <td><a href="news.php?id_news=<?= $a['id_news'] ?>"><?= $a['titre_news'] ?></a></td><td><a href="redaction.php?edit=<?= $a['id_news'] ?>">Modifier</a></td><td><a href="supprimer.php?id_news=<?= $a['id_news'] ?>">Supprimer</a></tr>
           <?php } ?>
           

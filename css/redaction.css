@@ -1,0 +1,26 @@
+input[type=text] {
+    border: 3px solid #b653c6;
+    border-radius: 10;
+     width: 20px
+    -webkit-appearance: none;
+
+}
+
+#titre{
+    text-align: center;
+    font-size: 1.7em;
+}  
+
+textarea[name=description_news] {
+    border: 3px solid #b653c6;
+    border-radius: 10;
+    -webkit-appearance: none;
+}
+
+input[type=submit]{
+    border: 3px solid black;
+    border-radius: 10;
+    -webkit-appearance: none;
+    background-color: black;
+    color:white;
+}
