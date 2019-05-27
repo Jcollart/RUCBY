@@ -2,7 +2,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 
-<header>
 <nav>
   <div class="nav-logo">
     <a href="index.php"><img id="logo" src="images/logo_villers.png"/></a>
@@ -22,4 +21,3 @@
     <a href="contact.php">contact</a>
   </div>
 </nav>
-</header>

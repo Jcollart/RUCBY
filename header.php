@@ -3,7 +3,6 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 <script type="text/javascript" src="js/header.js"></script>
 
-<header>
   <nav>
     <div class="nav-logo">
       <a href="index.php"><img id="logo" src="images/logo_villers.png"/></a>
@@ -23,4 +22,3 @@
       <a href="contact.php">contact</a>
     </div>
   </nav>
-</header>
