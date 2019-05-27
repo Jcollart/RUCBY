@@ -48,8 +48,8 @@
   <!--- ARTICLE NEWS --->
   <article id=news>
   
-        <div id=image_article><a href="article.php?id=<?php echo $donnees['$id_news'];?>"><img src="images/<?php echo $donnees['nom_image']; ?>" ></a></div>
-        <div id=contenu_article><a href="article.php?id=<?php echo $donnees['$id_news'];?>">
+        <div id=image_article><a href="article.php?id=<?php echo $donnees['id_news'];?>"><img src="images/<?php echo $donnees['nom_image']; ?>" ></a></div>
+        <div id=contenu_article><a href="article.php?id=<?php echo $donnees['id_news'];?>">
             <h1><?php echo $donnees['titre_news']; ?></h1>
          
             <p><?php echo $donnees['description_news']; ?>...</p>

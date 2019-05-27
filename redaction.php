@@ -16,7 +16,7 @@ $mode_edition = 0;
 if(isset($_GET['edit']) AND !empty($_GET['edit'])) {
    $mode_edition = 1;
    $edit_id = htmlspecialchars($_GET['edit']);
-   $edit_article = $bdd->prepare('SELECT * FROM news WHERE  id_news = ?');
+   $edit_article = $bdd->prepare('SELECT * FROM news INNER JOIN image WHERE  id_news = id_image');
    $edit_article->execute(array($edit_id));
    if($edit_article->rowCount() == 1) {
       $edit_article = $edit_article->fetch();
