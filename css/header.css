@@ -63,8 +63,8 @@ nav > #nav-check {
   nav > .nav-btn {
     display: inline-block;
     position: absolute;
-    right: 0px;
-    top: 0px;
+    right: 10px;
+    top: 8px;
   }
   nav > .nav-btn > label {
     display: inline-block;
@@ -79,6 +79,7 @@ nav > #nav-check {
     height: 10px;
     border-top: 2px solid #eee;
   }
+
   nav > .nav-links {
     position: absolute;
     display: block;
@@ -104,7 +105,7 @@ nav > #nav-check {
     height: 0px;
   }
   nav > #nav-check:checked + .nav-links {
-    height: calc(45vh - 30px);
+    height: calc(35vh - 30px);
     overflow-y: auto;
   }
 
@@ -120,7 +121,7 @@ nav > .nav-logo > a > img {
   }
 }
 
-@media screen and (max-width:1520px) {
+@media screen and (max-width:1543px) {
 nav > .nav-logo > a > img {
   margin-right: 400px;
   margin-top: 2px;
