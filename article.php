@@ -30,17 +30,17 @@
 
   <div id="header_article" <?php
 
-$requete = $bdd->prepare('SELECT * FROM news, image, appartenir WHERE news.id_news=appartenir.id_news AND appartenir.id_image=image.id_image AND news.id_news='.$_GET['id_news'] );
+$requete = $bdd->prepare('SELECT * FROM news, image, appartenir WHERE news.id_news=appartenir.id_news AND appartenir.id_image=image.id_image AND news.id_news='.$_GET['id'] );
 $requete->execute();
  
  
-while  ($resultat = $requete->fetch())
+while  ($donnees = $requete->fetch())
 {
 
 
-?> style="background-image: url(images/<?php echo $resultat['nom_image']; ?>)">
+?> style="background-image: url(images/<?php echo $donnees['nom_image']; ?>)">
     <div id="cadre_titre">
-      <h1><?php echo $resultat['titre_news']; ?></h1>
+      <h1><?php echo $donnees['titre_news']; ?></h1>
     </div>
   </div>
 
@@ -50,7 +50,7 @@ while  ($resultat = $requete->fetch())
   <article id=contenu_article>
 
 
-    <p><?php echo $resultat['description_news']; ?>
+    <p><?php echo $donnees['description_news']; ?>
 
     </p>
 
@@ -61,7 +61,7 @@ while  ($resultat = $requete->fetch())
 $requete->closeCursor(); // Termine le traitement de la requête
 
 ?>
-<!--
+  <!--
   <div class="boutons_partage">
     <div id="icones_partage"><a class="faa-parent animated-hover"    
         href="https://www.facebook.com/sharer.php?u==<? $lien ?>&t=?=<? $titre ?>"
