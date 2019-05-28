@@ -24,22 +24,23 @@ if(isset($_GET['edit']) AND !empty($_GET['edit'])) {
       die('Erreur : l\'article n\'existe pas...');
    }
 }
-if(isset($_POST['titre_news'], $_POST['description_news'])) {
-   if(!empty($_POST['titre_news']) AND !empty($_POST['description_news']) ) {
+if(isset($_POST['titre_news'], $_POST['description_news'], $_POST['nom_image'])) {
+   if(!empty($_POST['titre_news']) AND !empty($_POST['description_news']) AND !empty($_POST['nom_image']) ) {
       
       $article_titre = htmlspecialchars($_POST['titre_news']);
       $article_contenu = htmlspecialchars($_POST['description_news']);
+      $article_photo = htmlspecialchars($_POST['nom_image']);
       if($mode_edition == 0) {
        // var_dump($_FILES);
          // var_dump(exif_imagetype($_FILES['miniature']['tmp_name']));
-         $ins = $bdd->prepare('INSERT INTO news (titre_news, description_news, date_news) VALUES (?, ?, NOW())');
-         $ins->execute(array($article_titre, $article_contenu));
+         $ins = $bdd->prepare('INSERT INTO  image (nom_image), news (titre_news, description_news, date_news) VALUES (?,?,?, NOW())');
+         $ins->execute(array($article_titre, $article_contenu, $article_photo));
          $lastid = $bdd->lastInsertId();
          
-         if(isset($_FILES['images']) AND !empty($_FILES['images']['nom_image'])) {
+         if(isset($_FILES['image']) AND !empty($_FILES['image']['nom_image'])) {
             if(exif_imagetype($_FILES['images']['nom_image']) == 2) {
                $chemin = 'images/'.$lastid.'.jpg';
-               move_uploaded_file($_FILES['images']['nom_image'], $chemin);
+               move_uploaded_file($_FILES['image']['nom_image'], $chemin);
             } else {
                $message = 'Votre image doit être au format jpg';
             }
@@ -58,26 +59,32 @@ if(isset($_POST['titre_news'], $_POST['description_news'])) {
 ?>
 <!DOCTYPE html>
 <html>
+
 <head>
    <title>Rédaction / Edition</title>
    <meta charset="utf-8">
    <link rel="stylesheet" href="css/redaction.css">
 </head>
-<body>
-<div titreajout><center><h1> AJOUT DE LA NEWS </h1><center></div>
 
-<form method="POST" enctype="multipart/form-data">
-      <center><input type="text" name="titre_news" placeholder="Titre"<?php if($mode_edition == 1) { ?> value="<?= 
-      $edit_article['titre_news'] ?>"<?php } ?> /><br /><br/>
-      
-      <textarea name="description_news" placeholder="Contenu de l'article"><?php if($mode_edition == 1) { ?><?= 
-      $edit_article['description_news'] ?><?php } ?></textarea><br /><br/>
-      <?php if($mode_edition == 0) { ?>
-      <input type="file" name="images" /><br /><br/>
-      <?php } ?>
-      <input type="submit" value="Soumettre l'article" /></center>
+<body>
+   <div titreajout>
+      <center>
+         <h1> AJOUT DE LA NEWS </h1>
+         <center>
+   </div>
+
+   <form method="POST" enctype="multipart/form-data">
+      <center><input type="text" name="titre_news" placeholder="Titre" <?php if($mode_edition == 1) { ?> value="<?= 
+      $edit_article['titre_news'] ?>" <?php } ?> /><br /><br />
+         <textarea name="description_news" placeholder="Contenu de l'article"><?php if($mode_edition == 1) { ?><?= 
+      $edit_article['description_news'] ?><?php } ?></textarea><br /><br />
+         <?php if($mode_edition == 0) { ?>
+         <input type="file" name="images" /><br /><br />
+         <?php } ?>
+         <input type="submit" value="Soumettre l'article" /></center>
    </form>
    <br />
    <?php if(isset($message)) { echo $message; } ?>
 </body>
+
 </html>
