@@ -77,8 +77,8 @@ if(isset($_POST['titre_news'], $_POST['description_news'])) {
          <?php } ?>
          <input type="submit" value="Soumettre l'article" />
    </form><br /><br />
-   <a href="gestionarticle.php">>> Gestion des news</a><br /><br />
-   <a href="gestionphoto.php">>> Gestion des photos</a></center>
+   <a href="gestionarticle.php">>> Gestion des news<<</a><br /><br />
+   <a href="gestionphoto.php">>> Gestion des photos<<</a></center>
    <br />
    <?php if(isset($message)) { echo $message; } ?>
 </body>
