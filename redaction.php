@@ -16,45 +16,36 @@ $mode_edition = 0;
 if(isset($_GET['edit']) AND !empty($_GET['edit'])) {
    $mode_edition = 1;
    $edit_id = htmlspecialchars($_GET['edit']);
-   $edit_article = $bdd->prepare('SELECT * FROM news INNER JOIN image WHERE  id_news = id_image');
-   $edit_article->execute(array($edit_id));
-   if($edit_article->rowCount() == 1) {
-      $edit_article = $edit_article->fetch();
+   $edit_news = $bdd->prepare('SELECT * FROM news  WHERE  id_news = ?');
+   $edit_news->execute(array($edit_id));
+   if($edit_news->rowCount() == 1) {
+      $edit_news = $edit_news->fetch();
    } else {
-      die('Erreur : l\'article n\'existe pas...');
+      die('Erreur : la news n\'existe pas...');
    }
 }
-if(isset($_POST['titre_news'], $_POST['description_news'], $_POST['nom_image'])) {
-   if(!empty($_POST['titre_news']) AND !empty($_POST['description_news']) AND !empty($_POST['nom_image']) ) {
+if(isset($_POST['titre_news'], $_POST['description_news'])) {
+   if(!empty($_POST['titre_news']) AND !empty($_POST['description_news'])) {
       
-      $article_titre = htmlspecialchars($_POST['titre_news']);
-      $article_contenu = htmlspecialchars($_POST['description_news']);
-      $article_photo = htmlspecialchars($_POST['nom_image']);
+      $news_titre = htmlspecialchars($_POST['titre_news']);
+      $news_contenu = htmlspecialchars($_POST['description_news']);
       if($mode_edition == 0) {
-       // var_dump($_FILES);
-         // var_dump(exif_imagetype($_FILES['miniature']['tmp_name']));
-         $ins = $bdd->prepare('INSERT INTO  image (nom_image), news (titre_news, description_news, date_news) VALUES (?,?,?, NOW())');
-         $ins->execute(array($article_titre, $article_contenu, $article_photo));
+      
+         $ins = $bdd->prepare('INSERT INTO  news (titre_news, description_news, date_news) VALUES (?,?, NOW())');
+         $ins->execute(array($news_titre, $news_contenu));
          $lastid = $bdd->lastInsertId();
          
-         if(isset($_FILES['image']) AND !empty($_FILES['image']['nom_image'])) {
-            if(exif_imagetype($_FILES['images']['nom_image']) == 2) {
-               $chemin = 'images/'.$lastid.'.jpg';
-               move_uploaded_file($_FILES['image']['nom_image'], $chemin);
-            } else {
-               $message = 'Votre image doit être au format jpg';
-            }
          }
-         $message = 'Votre article a bien été posté';
+         $message = 'Votre news a bien été posté';
       } else {
          $update = $bdd->prepare('UPDATE news SET titre_news = ?, description_news = ?, date_news = NOW() WHERE id = ?');
-         $update->execute(array($article_titre, $article_contenu, $edit_id));
+         $update->execute(array($news_titre, $news_contenu, $edit_id));
          header('Location: http://127.0.0.1/html/Rucby/news.php?id='.$edit_id);
-         $message = 'Votre article a bien été mis à jour !';
+         $message = 'Votre news a bien été mis à jour !';
       }
    } else {
       $message = 'Veuillez remplir tous les champs';
-   }
+   
 }
 ?>
 <!DOCTYPE html>
@@ -67,6 +58,9 @@ if(isset($_POST['titre_news'], $_POST['description_news'], $_POST['nom_image']))
 </head>
 
 <body>
+   <?php include('header.php');?>
+
+
    <div titreajout>
       <center>
          <h1> AJOUT DE LA NEWS </h1>
@@ -75,14 +69,16 @@ if(isset($_POST['titre_news'], $_POST['description_news'], $_POST['nom_image']))
 
    <form method="POST" enctype="multipart/form-data">
       <center><input type="text" name="titre_news" placeholder="Titre" <?php if($mode_edition == 1) { ?> value="<?= 
-      $edit_article['titre_news'] ?>" <?php } ?> /><br /><br />
+      $edit_news['titre_news'] ?>" <?php } ?> /><br /><br />
          <textarea name="description_news" placeholder="Contenu de l'article"><?php if($mode_edition == 1) { ?><?= 
-      $edit_article['description_news'] ?><?php } ?></textarea><br /><br />
-         <?php if($mode_edition == 0) { ?>
+      $edit_news['description_news'] ?><?php } ?></textarea><br /><br />
+         <?php if($mode_edition == 1) { ?>
          <input type="file" name="images" /><br /><br />
          <?php } ?>
-         <input type="submit" value="Soumettre l'article" /></center>
-   </form>
+         <input type="submit" value="Soumettre l'article" />
+   </form><br /><br />
+   <a href="gestionarticle.php">>> Gestion des news</a><br /><br />
+   <a href="gestionphoto.php">>> Gestion des photos</a></center>
    <br />
    <?php if(isset($message)) { echo $message; } ?>
 </body>

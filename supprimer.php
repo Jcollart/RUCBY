@@ -21,3 +21,5 @@ if(isset($_GET['id_news']) AND !empty($_GET['id_news'])) {
  }
  
  ?>
+<br /><br />
+<a href="gestionarticle.php">>> Gestion des news</a>
