@@ -35,7 +35,7 @@ if(isset($_POST['titre_news'], $_POST['description_news'])) {
          $ins->execute(array($news_titre, $news_contenu));
          $lastid = $bdd->lastInsertId();
          
-         }
+      }   
          $message = 'Votre news a bien été posté';
       } else {
          $update = $bdd->prepare('UPDATE news SET titre_news = ?, description_news = ?, date_news = NOW() WHERE id = ?');
