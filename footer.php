@@ -3,7 +3,7 @@
       	<link rel="stylesheet" href="css/footer.css">
         <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
          <link href='//netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' rel='stylesheet'/>
-
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
         <footer class="nb-footer">
        <div class="container">
@@ -43,8 +43,8 @@
        </div>
        </div>
        <div class="footer2">
-         <div class="social">&#62220;</div>
-         <div class="social">&#62217;</div>
-         <div class="social">&#62235;</div>
+         <div class="social"><i class="fab fa-facebook"></i></div>
+         <div class="social"><i class="fab fa-twitter"></i></div>
+         <div class="social"><i class="fab fa-instagram"></i></div>
        </div>
        </footer>
