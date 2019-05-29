@@ -86,6 +86,7 @@ body {
         animation-duration: 2s;
         animation-name: slidein;
     }
+
     @keyframes slidein {
         from {
           margin-left: 100%;
@@ -398,4 +399,9 @@ iframe {
         }
       }
 
+}
+@media (max-width:480px) {
+  #join_us > h2 {
+      font-size: 1.8em;
+  }
 }

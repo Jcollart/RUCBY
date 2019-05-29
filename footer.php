@@ -34,9 +34,9 @@
        <div class="footer-info-single">
        	<h2 class="title">Plus D'infos</h2>
        	<ul class="list-unstyled">
+          <li><a href="#" title="">Plan</a></li>
+          <li><a href="#" title="">A Propos</a></li>
        		<li><a href="#" title="">Mentions Légales</a></li>
-       		<li><a href="#" title="">A Propos</a></li>
-       		<li><a href="#" title="">Plan</a></li>
        	</ul>
        </div>
        </div>
