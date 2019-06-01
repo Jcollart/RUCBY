@@ -47,12 +47,12 @@ nav > .nav-links > a {
   padding-top: 15px;
   letter-spacing: .5px;
   text-decoration: none;
-  color: white;
+  color: #888888;
   font-weight: bold;
 }
 
 nav > .nav-links > a:hover {
-  color: grey;
+  color: white;
 }
 
 nav > #nav-check {

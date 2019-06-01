@@ -75,10 +75,6 @@ if (isset($_POST["envoyer"])) {
     </div>
   </form>
 
-  <!--PARRALAX-->
-  <div class="parallax-window" data-parallax="scroll" data-image-src="images/sport1.jpg" alt=""></div>
-  <!--FIN PARRALAX-->
-
   <!--MAP-->
 
   <div id=map><iframe
@@ -86,9 +82,7 @@ if (isset($_POST["envoyer"])) {
       frameborder="0" style="border:0" allowfullscreen></iframe>
   </div>
 
-
   <!--JOIN US-->
-
   <div id="join_us">
     <h2>Rejoignez-nous !</h2><br>
     <h3>Adhésion</h3><br>
@@ -103,11 +97,6 @@ if (isset($_POST["envoyer"])) {
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore unde cupiditate ipsum dolore? Nihil,
       exercitationem impedit.</p><br>
   </div>
-
-
-
-
-
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
