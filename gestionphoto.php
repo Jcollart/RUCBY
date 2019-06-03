@@ -73,14 +73,11 @@ catch(Exception $e)
               $reponse = $bdd->query($req);
               while ($donnees = $reponse->fetch()) { ?>
               <td><?php echo $donnees['nom_photo']; ?><img width="50%"src="images/<?php echo $donnees['nom_photo']; ?>"></td>
-              <td>Supprimer</td>
+              <td><a href="supprimerphoto.php?id_photo=<?php echo $donnees['id_photo']; ?>">Supprimer</a></td>
             </tr><?php } $reponse->closeCursor(); ?>
           </table>
 
       </div>
-
-
-        <a href="news.php?id_news="><?= $donnees['titre_news'] ?></a>
 
 </body>
 </html>
