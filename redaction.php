@@ -72,7 +72,7 @@ if(isset($_POST['titre_news'], $_POST['description_news'])) {
       $edit_news['titre_news'] ?>" <?php } ?> /><br /><br />
          <textarea name="description_news" placeholder="Contenu de l'article"><?php if($mode_edition == 1) { ?><?= 
       $edit_news['description_news'] ?><?php } ?></textarea><br /><br />
-         <?php if($mode_edition == 1) { ?>
+         <?php if($mode_edition == 0) { ?>
          <input type="file" name="images" /><br /><br />
          <?php } ?>
          <input type="submit" value="Soumettre l'article" />
