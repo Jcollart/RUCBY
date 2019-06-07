@@ -7,17 +7,16 @@ try
 }
 catch(Exception $e)
 {
-  // En cas d'erreur, on affiche un message et on arrête tout
+
         die('Erreur : '.$e->getMessage());
 }
 
-// Si tout va bien, on peut continuer
-if(isset($_GET['id_news']) AND !empty($_GET['id_news'])) {
-    $suppr_id = htmlspecialchars($_GET['id_news']);
-    $suppr = $bdd->prepare('DELETE FROM news  WHERE id_news=?');
+if(isset($_GET['id_photo']) AND !empty($_GET['id_photo'])) {
+    $suppr_id = htmlspecialchars($_GET['id_photo']);
+    $suppr = $bdd->prepare('DELETE FROM photo WHERE id_photo=?');
     $suppr->execute(array($suppr_id));
-    echo ' la news est supprimée youpi';
-
+  //  header('Location: gestionphoto.php'); //
+    exit;
  }
- 
+
  ?>

@@ -77,8 +77,14 @@ if(isset($_POST['titre_news'], $_POST['description_news'], $_POST['nom_image']))
       $edit_news['titre_news'] ?>" <?php } ?> /><br /><br />
          <textarea name="description_news" placeholder="Contenu de la news"><?php if($mode_edition == 1) { ?><?= 
       $edit_news['description_news'] ?><?php } ?></textarea><br /><br />
+<<<<<<< HEAD
           <?php if($mode_edition == 0) { ?>
           <input type="file" name="images" <?php } ?><br/><br />
+=======
+         <?php if($mode_edition == 0) { ?>
+         <input type="file" name="images" /><br /><br />
+         <?php } ?>
+>>>>>>> 12b3e0de3de7d2581a299aeea791265151bee66c
          <input type="submit" value="Soumettre l'article" />
    </form><br /><br />
    <a href="gestionarticle.php">>> Gestion des news <<</a><br /><br />

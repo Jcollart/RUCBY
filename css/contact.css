@@ -1,407 +1,148 @@
 html {
-    height: 100%;
+     height: 100%;
 }
 
 body {
-    position: relative;
-    background-color: white;
-    min-height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    font-family: "Arvo";
-
+     position: relative;
+     background-color: white;
+     min-height: 100%;
+     margin: 0;
+     padding: 0;
+     overflow-x: hidden;
+     font-family: "Arvo";
 }
-
 
 #header_contact {
-    display: flex;
-    justify-content: center;
-    min-width: 100%;
-    min-height: 45em;
-    background-image: url(../images/sport3.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-
-
+     display: flex;
+     justify-content: center;
+     min-width: 100%;
+     min-height: 25em;
+     background-image: url(../images/sport3.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+     border-bottom: 5px solid #6D2878;
 }
 
-    body {
-        position: relative;
-        background-color: white;
-        min-height: 100%;
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
-        font-family: "Arvo";
-
-    }
-
-
-    #header_contact {
-        display: flex;
-        justify-content: center;
-        min-width: 100%;
-        min-height: 25em;
-        background-image: url(../images/sport3.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        border-bottom: 5px solid #6D2878;
-    }
-
-    #cadre_titre {
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        height: 4em;
-        margin-top: auto;
-        margin-bottom: auto;
-        background-color: rgba(000, 0, 0, 0.5);
-    }
-
-    #header_contact > #cadre_titre > h1 {
-        color: white;
-        font-size: 2.5em;
-        margin-top: auto;
-        margin-bottom: auto;
-    }
-
-
-    /******* STYLE DU FORMULAIRE *******/
-    form {
-        background-color: white;
-        padding: 10px;
-        display: block;
-
-    }
-
-    /****** STYLES DU CONTENEUR ******/
-
-    #conteneur-form {
-        margin-top: 20px;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        animation-duration: 2s;
-        animation-name: slidein;
-    }
-
-    @keyframes slidein {
-        from {
-          margin-left: 100%;
-          width: 300%;
-        }
-
-        to {
-          margin-left: 0%;
-          width: 100%;
-        }
-      }
-
-    /******** STYLES DES ELEMENTS DU CONTENEUR ******/
-
-    #element-form1 {
-        margin-left: 5px;
-        margin-right: 5px;
-
-        }
-
-
-    #element-form2 {
-        margin-left: 5px;
-        margin-right: 5px;
-
-    }
-
-
-    legend {
-        margin-bottom: 10px;
-        font-size: 2em;
-        color:white;
-    }
-
-    #conteneur-form input {
-        margin-bottom: 20px;
-        border-radius: 5px;
-        height: 42px;
-    }
-
-    #conteneur-form textarea {
-        border-radius: 5px solid #6D2878 ;
-    }
-
-
-    /******** STYLES DU BOUTON DU FORMULAIRE ******/
-
-    #bouton-form{
-      animation-duration: 4s;
-        animation-name: slidein;
-        text-align: center;
-    }
-
-    @keyframes slidein {
-        from {
-          margin-right: 100%;
-          width: 300%;
-        }
-
-        to {
-          margin-right: 0%;
-          width: 100%;
-        }
-      }
-
-    #bouton-form input {
-        border-radius: 5px;
-        width: 150px;
-        height: 40px;
-        font-size: 1em;
-        margin-top: 10px;
-        margin-bottom: 20px;
-    }
-
-
-    #bouton-form input:hover {
-        background: rgb(49, 47, 47);
-        color: white;
-    }
-
-
-    /********* STYLES DU PARALAX **********/
-
-    .parallax-window {
-        min-height: 50vh;
-        background: transparent;
-    }
-
-
-    /******** STYLES DE LA MAP *******/
-
-    iframe {
-        width: 100%;
-        height: 50vh;
-    }
-
-
-    /******** STYLES DE JOIN US ******/
-    #join_us {
-        padding-top: 1%;
-        width: 60%;
-        font-size: 1.7em;
-        margin-bottom: 1%;
-        margin: 0 auto;
-    }
-
-    #header_contact h1 {
-        font-size: 6em;
-        color: white;
-        margin-top: auto;
-        margin-bottom: auto;
-    }
-
-
-
-/****** STYLES DU CONTENEUR ******/
-
-#conteneur-form {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    animation-duration: 2s;
-    animation-name: slidein;
+#cadre_titre {
+     text-align: center;
+     display: flex;
+     justify-content: center;
+     width: 100%;
+     height: 4em;
+     margin-top: auto;
+     margin-bottom: auto;
+     background-color: rgba(000, 0, 0, 0.5);
 }
 
-@keyframes slidein {
-    from {
-      margin-left: 100%;
-      width: 300%;
-    }
-
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
-  }
-
-/******** STYLES DES ELEMENTS DU CONTENEUR ******/
-
-#element-form1 {
-    margin-left: 5px;
-    margin-right: 5px;
-
-    }
-
-
-#element-form2 {
-    margin-left: 5px;
-    margin-right: 5px;
-
+#header_contact > #cadre_titre > h1 {
+     color: white;
+     font-size: 2.5em;
+     margin-top: auto;
+     margin-bottom: auto;
 }
 
+form {
+     background-color: white;
+     padding: 10px;
+     display: block;
+}
+
+#element-form2, #element-form1 {
+     margin-left: 5px;
+     margin-right: 5px;
+}
 
 legend {
-    margin-bottom: 10px;
-    font-size: 2em;
-    color:white;
+     margin-bottom: 10px;
+     font-size: 2em;
+     color: white;
 }
 
 #conteneur-form input {
-    margin-bottom: 20px;
-    border-radius: 5px;
-    height: 42px;
-    border: solid 2px;
-    border-color: #6D2878;
+     margin-bottom: 20px;
+     border-radius: 5px;
+     height: 42px;
+     border: solid 2px;
+     border-color: #6D2878;
 }
 
 #conteneur-form textarea {
-    border-radius: 5px;
-    border: solid 2px;
-    height: 68%;
-    border-color: #6D2878;
+     border-radius: 5px;
+     border: solid 2px;
+     height: 68%;
+     border-color: #6D2878;
 }
 
-
-/******** STYLES DU BOUTON DU FORMULAIRE ******/
-
-#bouton-form{
-  animation-duration: 4s;
-    animation-name: slidein;
-    text-align: center;
+#bouton-form {
+     animation-duration: 4s;
+     animation-name: slidein;
+     text-align: center;
 }
-
-@keyframes slidein {
-    from {
-      margin-right: 100%;
-      width: 300%;
-    }
-
-    to {
-      margin-right: 0%;
-      width: 100%;
-    }
-  }
 
 #bouton-form input {
-    border-radius: 5px;
-    color: white;
-    background-color: #6D2878;
-    width: 150px;
-    height: 40px;
-    font-size: 1em;
-    margin-top: 10px;
-    margin-bottom: 20px;
+     border-radius: 5px;
+     color: white;
+     background-color: #6D2878;
+     width: 150px;
+     height: 40px;
+     font-size: 1em;
+     margin-top: 10px;
+     margin-bottom: 20px;
 }
-
 
 #bouton-form input:hover {
-    color: white;
-    background-color: black;
+     background: rgb(49, 47, 47);
+     color: white;
+     background-color: black;
 }
-
-
-/********* STYLES DU PARALAX **********/
 
 .parallax-window {
-    min-height: 50vh;
-    background: transparent;
+     min-height: 50vh;
+     background: transparent;
 }
-
-
-/******** STYLES DE LA MAP *******/
 
 iframe {
-    width: 100%;
-    height: 50vh;
+     width: 100%;
+     height: 50vh;
 }
-
-
-/******** STYLES DE JOIN US ******/
-#join_us {
-    padding-top: 1%;
-    width: 60%;
-    font-size: 1.7em;
-    margin-bottom: 1%;
-    margin: 0 auto;
-}
-
-
-
-
-
-/******* RESPONSIVITE ********/
 
 @media (max-width:1099px) {
-    #join_us {
-        font-size: 1.5em;
-    }
+     #join_us { font-size: 1.5em; }
 }
 
-
 @media (max-width:991px) {
-
-    #header_contact {
-        min-height: 35em;
-    }
-
-    #header_contact h1 {
-        font-size: 3em;
-    }
-
-    #join_us {
-        font-size: 1.4em;
-    }
+     #header_contact { min-height: 35em; }
 }
 
 @media (max-width:767px) {
+     #header_contact { min-height: 35em; }
+}
 
-    #header_contact {
-        min-height: 35em;
-    }
+#header_contact h1 {
+     color: white;
+     margin-top: auto;
+     margin-bottom: auto;
+     font-size: 3em;
+}
 
-    #header_contact h1 {
-        font-size: 3em;
-    }
+#join_us {
+     padding-top: 1%;
+     width: 60%;
+     margin-bottom: 1%;
+     margin: 0 auto;
+     font-size: 1.1em;
+}
 
-    #join_us {
-        font-size: 1.2em;
-    }
+#conteneur-form {
+     margin-top: 20px;
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+     animation-duration: 2s;
+     animation-name: slidein;
 }
 
 @media (max-width:480px) {
-
-    #header_contact {
-        min-height: 35em;
-    }
-
-    #header_contact h1 {
-        font-size: 3em;
-    }
-
-    #join_us {
-        font-size: 1.1em;
-    }
-
-    #conteneur-form {
-        animation-duration: 2s;
-        animation-name: slidein;
-    }
-    @keyframes slidein {
-        from {
-          margin-left: 100%;
-          width: 150%;
-        }
-
-        to {
-          margin-left: 0%;
-          width: 100%;
-        }
-      }
-
-}
-@media (max-width:480px) {
-  #join_us > h2 {
-      font-size: 1.8em;
-  }
+     #header_contact { min-height: 35em; }
+     #join_us > h2 { font-size: 1.8em; }
 }

@@ -146,7 +146,7 @@
 }
 
   footer.nb-footer .footer-info-single .title {
-  color: white;
+  color: #888888;
   font-weight: bold;
   text-transform: uppercase;
   font-size: 1.5em;
@@ -159,14 +159,14 @@
 
   footer.nb-footer .footer-info-single ul li a {
   display: block;
-  color: white;
+  color: #888888;
   text-align: center;
   font-size: 1.1em;
   padding: 2px 0;
 }
 
   footer.nb-footer .footer-info-single ul li a:hover {
-  color: #6D2878;
+  color: white;
   text-decoration: none;
 }
 

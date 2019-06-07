@@ -45,12 +45,12 @@ nav > .nav-links > a {
   padding-top: 15px;
   letter-spacing: .5px;
   text-decoration: none;
-  color: white;
+  color: #888888;
   font-weight: bold;
 }
 
 nav > .nav-links > a:hover {
-  color: grey;
+  color: white;
 }
 
 nav > #nav-check {
@@ -104,7 +104,7 @@ nav > #nav-check {
   }
 
   nav > #nav-check:checked + .nav-links {
-    height: calc(35vh - 30px);
+    height: calc(45vh - 30px);
     overflow-y: auto;
   }
 
