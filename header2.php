@@ -15,6 +15,7 @@
   </div>
   <input type="checkbox" id="nav-check">
   <div class="nav-links">
+    <a href="index.php">accueil</a>
     <a href="rank.php">classement</a>
     <a href="news.php">nouveautés</a>
     <a href="Rubphoto.php">rubrique-photo</a>

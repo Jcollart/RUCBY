@@ -105,7 +105,7 @@ nav > #nav-check {
     height: 0px;
   }
   nav > #nav-check:checked + .nav-links {
-    height: calc(35vh - 30px);
+    height: calc(45vh - 30px);
     overflow-y: auto;
   }
 
