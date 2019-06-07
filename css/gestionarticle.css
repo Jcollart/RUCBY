@@ -40,11 +40,10 @@
     padding-top: 7px; /*permet le centrage vertical*/
     text-align: center;
     color: #000;
-    background: #666;
-    background: linear-gradient( #666, #2C2C2C);
+    background: #999;
+    background: linear-gradient( #999, #2C2C2C);
     border-radius: 8px;
 }
-
 
 #titre{
     text-align: center;

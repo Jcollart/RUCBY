@@ -14,7 +14,7 @@ catch(Exception $e)
 // Si tout va bien, on peut continuer
 if(isset($_GET['id_news']) AND !empty($_GET['id_news'])) {
    $get_id = htmlspecialchars($_GET['id_news']);
-   $article = $bdd->prepare('SELECT * FROM articles WHERE id_news = ?');
+   $article = $bdd->prepare('SELECT * FROM news WHERE id_news = ?');
    $article->execute(array($get_id));
    if($article->rowCount() == 1) {
       $article = $article->fetch();

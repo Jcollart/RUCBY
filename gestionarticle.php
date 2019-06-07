@@ -2,7 +2,7 @@
 try
 {
   // On se connecte à MySQL
-  $bdd = new PDO('mysql:host=localhost;dbname=futsal;charset=UTF8', 'commun', 'commun');
+  $bdd = new PDO('mysql:host=localhost;dbname=futsal;charset=UTF8', 'root', '');
   
 }
 catch(Exception $e)
@@ -29,24 +29,25 @@ $news = $bdd->query('SELECT * FROM news ORDER BY id_news DESC');
 
   <a href="gestionphoto.php">>> Gestion des photos
     <<</a> <br /><br />
-    <a href="index.php">>> Retour à l'index <<</a> <div titreajout>
+    <a href="index.php">>> Retour à l'index <<</a>
+      <div titreajout>
         <center>
           <h1> AJOUTER UNE NEWS </h1>
           <center>
-            </div>
+      </div>
             <center>
               <div class="bouton">
                 <p>
                   <a href="redaction.php">AJOUTER</a>
                 </p>
               </div>
-              <center><br /><br /><br />
+            <center><br /><br /><br />
 
-                <div titrenews>
+      <div titrenews>
                   <center>
                     <h1> GESTION DES NEWS </h1>
                   </center>
-                </div>
+      </div>
                 <div class="tableau">
                   <center>
                     <table>

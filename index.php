@@ -23,7 +23,7 @@
     <div class="carousel-item active">
       <img src="images/sport1.jpg" class="d-block w-100" alt="...">
 			<div class="carousel-caption d-none d-md-block">
-          <p>1</p>
+          <p>Le Futsal en plein développement</p>
         </div>
     </div>
     <div class="carousel-item">
