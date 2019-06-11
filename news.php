@@ -34,7 +34,7 @@
   </div>
   <?php
 
-  $requete = $bdd->prepare("SELECT nom_image, titre_news, news.id_news, SUBSTRING(description_news, 1, 300) as description_news FROM appartenir, news, image WHERE news.id_news = appartenir.id_news AND image.id_image = appartenir.id_image ORDER BY id_news DESC limit 0, 3");
+  $requete = $bdd->prepare("SELECT nom_image, titre_news, news.id_news, SUBSTRING(description_news, 1, 300) as description_news FROM appartenir, news, image WHERE news.id_news = appartenir.id_news AND image.id_image = appartenir.id_image ORDER BY id_news DESC limit 0, 10");
   $requete->execute();
 
   while($donnees = $requete->fetch())
