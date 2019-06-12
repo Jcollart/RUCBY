@@ -42,7 +42,7 @@
       ?>
 
       <form action="" method="post">
-        <label for="photo">Ajoutez ici</label> : <input type="text" name="newphoto" id="photo" />
+        <label for="photo">Ajoutez ici</label> : <input type="file" name="newphoto" id="photo" />
         <select name="gallery">
         <?php
         //req pour faire le select en bdd

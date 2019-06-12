@@ -25,7 +25,7 @@ catch(Exception $e)
 
    <div titreajout><center><h1>GESTION DES GALERIES PHOTOS</h1><center></div>
 
-     <a href="ajoutphoto.php">Ajouter Photos</a>
+     <center><a href="ajoutphoto.php">Ajouter Photos</a></center>
 
      <?php
      //req pour supprimer ds les 2 tables /!\ d'abord supprimer ds la table de relation
