@@ -2,7 +2,7 @@
 try
 {
   // On se connecte à MySQL
-  $bdd = new PDO('mysql:host=localhost;dbname=futsal;charset=UTF8', 'root', '');
+  $bdd = new PDO('mysql:host=localhost;dbname=futsal;charset=UTF8', 'commun', 'commun');
   
 }
 catch(Exception $e)
@@ -34,7 +34,7 @@ if(isset($_POST['titre_news'], $_POST['description_news'], $_POST['nom_image']))
       
          $ins = $bdd->prepare('INSERT INTO  news (titre_news, description_news, date_news) VALUES (?, ?, NOW())');
          $ins->execute(array($news_titre, $news_contenu));
-         $req = ("SELECT id_image FROM image ORDER BY id_image DESC LIMIT 1");
+         $req = "SELECT id_image FROM image ORDER BY id_image DESC LIMIT 1";
          $reponse = $bdd->query($req);
          $donnees = $reponse->fetch();
 
@@ -42,7 +42,7 @@ if(isset($_POST['titre_news'], $_POST['description_news'], $_POST['nom_image']))
          //$selectid->execute();
          
          $ins1 = $bdd->prepare("INSERT INTO appartenir (id_image, id_news) VALUES (?,?)");
-         $ins1->execute(array($image_nom,$news_titre));
+         $ins1->execute(array($image_nom,));
          //$lastid1 = $bdd->lastInsertId();
          //$ins2 = $bdd->prepare("INSERT INTO appartenir(id_news,id_image) VALUES( ?, ?)");
          //$ins2->execute(array('id_news', 'id_image'));
