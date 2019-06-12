@@ -29,7 +29,7 @@
                      if($mailexist == 0) {
                          $insertmbr = $bdd->prepare("INSERT INTO membres(pseudo, mail, mdp) VALUES(?, ?, ?)");
                          $insertmbr->execute(array($pseudo, $mail, $mdp));
-                         $erreur = "Votre compte a bien été créé !";
+                         $erreur = "Votre compte a bien été créé ! <a href='connexion.php'>>> Page connexion</a>";
                          } else {
                             $erreur = "Adresse mail déjà utilisée !";
                          }
@@ -48,7 +48,7 @@
           }
 ?>
 
-<a href="connexion.php">>> Page connexion</a>
+<!--<a href="connexion.php">>> Page connexion</a>-->
 
     <div align="center">
       <h2>Inscription admin</h2>
