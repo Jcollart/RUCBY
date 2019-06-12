@@ -26,7 +26,8 @@ $news = $bdd->query('SELECT * FROM news ORDER BY id_news DESC');
 </head>
 
 <body>
-
+<?php include('header.php');?>
+<br /><br /><br /><br />
   <a href="gestionphoto.php">>> Gestion des photos
     <<</a> <br /><br />
     <a href="index.php">>> Retour à l'index <<</a>

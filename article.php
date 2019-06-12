@@ -30,7 +30,7 @@
 
   <div id="header_article" <?php
 
-$requete = $bdd->prepare('SELECT * FROM news, image, appartenir WHERE news.id_news=appartenir.id_news AND appartenir.id_image=image.id_image AND news.id_news='.$_GET['id'] );
+$requete = $bdd->prepare('SELECT * FROM news, image, appartenir WHERE news.id_news=appartenir.id_news AND appartenir.id_image=image.id_image AND news.id_news='.$_GET['id_news'] );
 $requete->execute();
  
  
@@ -64,7 +64,7 @@ $requete->closeCursor(); // Termine le traitement de la requête
 
   <div class="boutons_partage">
     <div id="icones_partage">
-      <a class="faa-parent animated-hover" href="https://www.facebook.com/sharer.php?u=<?= $lien ?>&t=<? $titre ?>"
+      <a class="faa-parent animated-hover" href="https://www.facebook.com/share?url=?=<? $lien ?>&via=votre-nom-facebook"
         onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=500,width=700');return false;">
         <i class="fab fa-facebook-square fa-4x faa-shake"></i>
       </a>
