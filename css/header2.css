@@ -104,7 +104,7 @@ nav > #nav-check {
   }
 
   nav > #nav-check:checked + .nav-links {
-    height: calc(45vh - 30px);
+    height: calc(35vh - 30px);
     overflow-y: auto;
   }
 
@@ -120,7 +120,7 @@ nav > .nav-logo > a > img {
   }
 }
 
-@media screen and (max-width:1520px) {
+@media screen and (max-width:1700px) {
 nav > .nav-logo > a > img {
   margin-right: 400px;
   margin-top: 2px;
